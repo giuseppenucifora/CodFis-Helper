@@ -20,7 +20,6 @@ typedef enum {
     Gender_Man
 } Gender;
 
-
 @property (nonatomic, strong)   NSString *surname;
 @property (nonatomic, strong)   NSString *name;
 @property (nonatomic, strong)	NSString *birthDay;

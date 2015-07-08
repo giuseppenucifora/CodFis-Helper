@@ -7,12 +7,22 @@
 //
 
 #import "CodFisHelperAppDelegate.h"
+#import "CodFis+Helper.h"
 
 @implementation CodFisHelperAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    
+    CodFis_Helper *helper = [[CodFis_Helper alloc] init];
+    
+    [helper setSurname:@"Nucifora"];
+    
+    [helper setName:@"Giuseppe Emanuel"];
+    
+    NSLog(@"%@",[helper calculate]);
+    
     return YES;
 }
 
