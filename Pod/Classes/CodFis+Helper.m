@@ -10,4 +10,20 @@
 
 @implementation CodFis_Helper
 
+- (instancetype) init {
+    self = [super init];
+    if (self) {
+        
+    }
+    return self;
+}
+
+- (NSString*) calculate {
+    return @"";
+}
+
+- (BOOL) check:(NSString*) codFis {
+    return YES;
+}
+
 @end

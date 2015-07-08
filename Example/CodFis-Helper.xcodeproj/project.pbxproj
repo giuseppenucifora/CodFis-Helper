@@ -40,7 +40,7 @@
 		1594F5810C36498D7A9E1614 /* Pods-CodFis-Helper_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CodFis-Helper_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-CodFis-Helper_Example/Pods-CodFis-Helper_Example.release.xcconfig"; sourceTree = "<group>"; };
 		3EAAC1157191A3E29BFE13F9 /* Pods-CodFis-Helper_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CodFis-Helper_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CodFis-Helper_Tests/Pods-CodFis-Helper_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		522AA81E364FC60CEA095D19 /* Pods_CodFis_Helper_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CodFis_Helper_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		6003F58A195388D20070C39A /* CodFis-Helper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = "CodFis-Helper.app"; path = "CodFis-Helper_Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6003F58A195388D20070C39A /* CodFis-Helper_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CodFis-Helper_Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		6003F591195388D20070C39A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -53,12 +53,14 @@
 		6003F5A5195388D20070C39A /* CodFisHelperViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CodFisHelperViewController.h; sourceTree = "<group>"; };
 		6003F5A6195388D20070C39A /* CodFisHelperViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CodFisHelperViewController.m; sourceTree = "<group>"; };
 		6003F5A8195388D20070C39A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		6003F5AE195388D20070C39A /* Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = Tests.xctest; path = "CodFis-Helper_Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6003F5AE195388D20070C39A /* CodFis-Helper_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "CodFis-Helper_Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F5AF195388D20070C39A /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		6003F5B7195388D20070C39A /* Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Tests-Info.plist"; sourceTree = "<group>"; };
 		6003F5B9195388D20070C39A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
+		6840FB021B4D78B5009724FE /* CodFisResources.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CodFisResources.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		6840FB051B4D78B5009724FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		69D594011BE85121E72B1E7C /* CodFis-Helper.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = "CodFis-Helper.podspec"; path = "../CodFis-Helper.podspec"; sourceTree = "<group>"; };
 		72426C36BAE7F3E98B267A8F /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
@@ -90,6 +92,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		6840FAFF1B4D78B5009724FE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -99,6 +108,7 @@
 				60FF7A9C1954A5C5007DD14C /* Podspec Metadata */,
 				6003F593195388D20070C39A /* Example for CodFis-Helper */,
 				6003F5B5195388D20070C39A /* Tests */,
+				6840FB031B4D78B5009724FE /* CodFisResources */,
 				6003F58C195388D20070C39A /* Frameworks */,
 				6003F58B195388D20070C39A /* Products */,
 				83535D2711874F2FBE325BE0 /* Pods */,
@@ -108,8 +118,9 @@
 		6003F58B195388D20070C39A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				6003F58A195388D20070C39A /* CodFis-Helper.app */,
-				6003F5AE195388D20070C39A /* Tests.xctest */,
+				6003F58A195388D20070C39A /* CodFis-Helper_Example.app */,
+				6003F5AE195388D20070C39A /* CodFis-Helper_Tests.xctest */,
+				6840FB021B4D78B5009724FE /* CodFisResources.bundle */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -182,6 +193,22 @@
 			name = "Podspec Metadata";
 			sourceTree = "<group>";
 		};
+		6840FB031B4D78B5009724FE /* CodFisResources */ = {
+			isa = PBXGroup;
+			children = (
+				6840FB041B4D78B5009724FE /* Supporting Files */,
+			);
+			path = CodFisResources;
+			sourceTree = "<group>";
+		};
+		6840FB041B4D78B5009724FE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6840FB051B4D78B5009724FE /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		83535D2711874F2FBE325BE0 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -213,7 +240,7 @@
 			);
 			name = "CodFis-Helper_Example";
 			productName = "CodFis-Helper";
-			productReference = 6003F58A195388D20070C39A /* CodFis-Helper.app */;
+			productReference = 6003F58A195388D20070C39A /* CodFis-Helper_Example.app */;
 			productType = "com.apple.product-type.application";
 		};
 		6003F5AD195388D20070C39A /* CodFis-Helper_Tests */ = {
@@ -234,8 +261,25 @@
 			);
 			name = "CodFis-Helper_Tests";
 			productName = "CodFis-HelperTests";
-			productReference = 6003F5AE195388D20070C39A /* Tests.xctest */;
+			productReference = 6003F5AE195388D20070C39A /* CodFis-Helper_Tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		6840FB011B4D78B5009724FE /* CodFisResources */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6840FB061B4D78B5009724FE /* Build configuration list for PBXNativeTarget "CodFisResources" */;
+			buildPhases = (
+				6840FAFE1B4D78B5009724FE /* Sources */,
+				6840FAFF1B4D78B5009724FE /* Frameworks */,
+				6840FB001B4D78B5009724FE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CodFisResources;
+			productName = CodFisResources;
+			productReference = 6840FB021B4D78B5009724FE /* CodFisResources.bundle */;
+			productType = "com.apple.product-type.bundle";
 		};
 /* End PBXNativeTarget section */
 
@@ -249,6 +293,9 @@
 				TargetAttributes = {
 					6003F5AD195388D20070C39A = {
 						TestTargetID = 6003F589195388D20070C39A;
+					};
+					6840FB011B4D78B5009724FE = {
+						CreatedOnToolsVersion = 6.4;
 					};
 				};
 			};
@@ -267,6 +314,7 @@
 			targets = (
 				6003F589195388D20070C39A /* CodFis-Helper_Example */,
 				6003F5AD195388D20070C39A /* CodFis-Helper_Tests */,
+				6840FB011B4D78B5009724FE /* CodFisResources */,
 			);
 		};
 /* End PBXProject section */
@@ -287,6 +335,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6840FB001B4D78B5009724FE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -401,6 +456,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				6003F5BC195388D20070C39A /* Tests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6840FAFE1B4D78B5009724FE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -578,6 +640,49 @@
 			};
 			name = Release;
 		};
+		6840FB071B4D78B5009724FE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = CodFisResources/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		6840FB081B4D78B5009724FE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = CodFisResources/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -607,6 +712,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		6840FB061B4D78B5009724FE /* Build configuration list for PBXNativeTarget "CodFisResources" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6840FB071B4D78B5009724FE /* Debug */,
+				6840FB081B4D78B5009724FE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
