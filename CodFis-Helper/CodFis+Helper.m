@@ -29,7 +29,15 @@
     
     [resposeString appendString:[self getCodFisName]];
     
-    return resposeString;
+    [resposeString appendString:[self getCodFisYear]];
+    
+    [resposeString appendString:[self getCodFisMonth]];
+    
+    [resposeString appendString:[self getCodFisDay]];
+    
+    [resposeString appendString:[self getCodFisPlace]];
+    
+    return [resposeString stringByReplacingOccurrencesOfString:@" " withString:@""];
 }
 
 - (BOOL) check:(NSString*) codFis {
@@ -116,32 +124,92 @@
             }
         }
     }
+    return [resultString uppercaseString];
+}
+
+- (NSString *) getCodFisYear {
     
-    /*for (NSString *chr in consonantsArray) {
-        if (![chr isEqualToString:@""]) {
-            [resultString appendString:chr];
-        }
-    }
-    
-    if ([resultString length] >= DEF_SURNAME_COD_LENGHT) {
-        return [[resultString substringToIndex:DEF_SURNAME_COD_LENGHT] uppercaseString];
-    }
-    
-    for (NSString *chr in vowelArray) {
-        if (![chr isEqualToString:@""]) {
-            [resultString appendString:chr];
-        }
-    }
-    
-    if ([resultString length] >= DEF_SURNAME_COD_LENGHT) {
-        [resultString setString:[resultString substringToIndex:DEF_SURNAME_COD_LENGHT]];
+    if (_birthYear < 100) {
+        return [NSString stringWithFormat:@"%ld",_birthYear];
     }
     else {
-        for(NSUInteger i = [resultString length]; i< DEF_SURNAME_COD_LENGHT;i++){
-            [resultString appendString:@"x"];
+        NSString * allDigits = [NSString stringWithFormat:@"%ld",_birthYear];
+        return [allDigits substringWithRange:NSMakeRange(allDigits.length -2, 2)];
+    }
+    return nil;
+}
+
+- (NSString *) getCodFisMonth {
+    
+    NSArray *mounths = @[@"A",@"B",@"C",@"D",@"E",@"H",@"L",@"M",@"P",@"R",@"S",@"T"];
+    
+    if (_birthMonth <= 12) {
+        return [mounths objectAtIndex:_birthMonth-1];
+    }
+    return nil;
+}
+
+- (NSString *) getCodFisDay {
+    
+    NSInteger increment = 0;
+    switch (_gender) {
+        case Gender_Woman:
+            increment = 40;
+            break;
+        case Gender_Man:
+        default: {
+            increment = 0;
         }
-    }*/
-    return [resultString uppercaseString];
+            break;
+    }
+    
+    BOOL checkMonth = NO;
+    switch (_birthMonth) {
+        case 2:{
+            if(_birthDay < 29) {
+                checkMonth = YES;
+            }
+        }
+            break;
+        case 4:
+        case 6:
+        case 9:
+        case 11:{
+            if(_birthDay < 30) {
+                checkMonth = YES;
+            }
+        }
+            break;
+        default:{
+            if(_birthDay < 31) {
+                checkMonth = YES;
+            }
+        }
+            break;
+    }
+    if (checkMonth) {
+        return [NSString stringWithFormat:@"%02ld",_birthDay + increment];
+    }
+    
+    return nil;
+}
+
+- (NSString *) getCodFisPlace {
+    
+    NSError *error = nil;
+    
+    NSDictionary *dict = [NSKeyedUnarchiver unarchiveObjectWithData:[[NSData alloc] initWithContentsOfFile:[self getCodFisPlaceListFile] options:NSDataReadingMappedAlways error:&error]];
+
+    NSLog(@"%@",dict);
+    
+    return nil;
+}
+
+- (NSString*) getCodFisPlaceListFile {
+    
+    NSString *filePath = [[NSBundle mainBundle] pathForResource:@"codFisCodes" ofType:@"json"];
+    
+    return filePath;
 }
 
 @end

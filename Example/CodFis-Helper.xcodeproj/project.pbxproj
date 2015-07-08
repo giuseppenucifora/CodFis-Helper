@@ -21,8 +21,6 @@
 		6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
 		6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5B8195388D20070C39A /* InfoPlist.strings */; };
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
-		6840FB121B4D8245009724FE /* CodFis+Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = 6840FB101B4D8245009724FE /* CodFis+Helper.m */; };
-		6840FB131B4D8245009724FE /* codFisCodes.json in Resources */ = {isa = PBXBuildFile; fileRef = 6840FB111B4D8245009724FE /* codFisCodes.json */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
 		91AC20C3FDDAB28D136716A5 /* Pods_CodFis_Helper_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 522AA81E364FC60CEA095D19 /* Pods_CodFis_Helper_Example.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
@@ -63,9 +61,6 @@
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
 		6840FB021B4D78B5009724FE /* CodFisResources.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CodFisResources.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		6840FB051B4D78B5009724FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6840FB0F1B4D8245009724FE /* CodFis+Helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "CodFis+Helper.h"; path = "../../Pod/Classes/CodFis+Helper.h"; sourceTree = "<group>"; };
-		6840FB101B4D8245009724FE /* CodFis+Helper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "CodFis+Helper.m"; path = "../../Pod/Classes/CodFis+Helper.m"; sourceTree = "<group>"; };
-		6840FB111B4D8245009724FE /* codFisCodes.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = codFisCodes.json; path = ../../Pod/Classes/codFisCodes.json; sourceTree = "<group>"; };
 		69D594011BE85121E72B1E7C /* CodFis-Helper.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = "CodFis-Helper.podspec"; path = "../CodFis-Helper.podspec"; sourceTree = "<group>"; };
 		72426C36BAE7F3E98B267A8F /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
@@ -146,7 +141,6 @@
 		6003F593195388D20070C39A /* Example for CodFis-Helper */ = {
 			isa = PBXGroup;
 			children = (
-				6840FB091B4D81CF009724FE /* CodFis-Helper */,
 				6003F59C195388D20070C39A /* CodFisHelperAppDelegate.h */,
 				6003F59D195388D20070C39A /* CodFisHelperAppDelegate.m */,
 				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
@@ -213,16 +207,6 @@
 				6840FB051B4D78B5009724FE /* Info.plist */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		6840FB091B4D81CF009724FE /* CodFis-Helper */ = {
-			isa = PBXGroup;
-			children = (
-				6840FB0F1B4D8245009724FE /* CodFis+Helper.h */,
-				6840FB101B4D8245009724FE /* CodFis+Helper.m */,
-				6840FB111B4D8245009724FE /* codFisCodes.json */,
-			);
-			name = "CodFis-Helper";
 			sourceTree = "<group>";
 		};
 		83535D2711874F2FBE325BE0 /* Pods */ = {
@@ -342,7 +326,6 @@
 			files = (
 				873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */,
 				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
-				6840FB131B4D8245009724FE /* codFisCodes.json in Resources */,
 				6003F598195388D20070C39A /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -463,7 +446,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				6003F59E195388D20070C39A /* CodFisHelperAppDelegate.m in Sources */,
-				6840FB121B4D8245009724FE /* CodFis+Helper.m in Sources */,
 				6003F5A7195388D20070C39A /* CodFisHelperViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
 			);

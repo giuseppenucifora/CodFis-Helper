@@ -22,12 +22,13 @@ typedef enum {
 
 @property (nonatomic, strong)   NSString *surname;
 @property (nonatomic, strong)   NSString *name;
-@property (nonatomic, strong)	NSString *birthDay;
-@property (nonatomic, strong)	NSString *birthMonth;
-@property (nonatomic, strong)	NSString *birthYear;
+@property (nonatomic)	NSInteger birthDay;
+@property (nonatomic)	NSInteger birthMonth;
+@property (nonatomic)	NSInteger birthYear;
 @property (nonatomic, assign)	Gender	gender;
 @property (nonatomic, assign)   State	state;
 @property (nonatomic, strong)   NSString *place;
+@property (nonatomic) BOOL collision;
 
 - (NSString*) calculate;
 

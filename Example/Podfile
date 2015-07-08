@@ -8,5 +8,4 @@ end
 target 'CodFis-Helper_Tests', :exclusive => true do
   pod "CodFis-Helper", :path => "../"
 
-  pod 'FBSnapshotTestCase'
 end

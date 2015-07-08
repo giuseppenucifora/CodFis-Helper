@@ -49,9 +49,7 @@ code_sign() {
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework 'CodFis_Helper.framework'
-  install_framework 'FBSnapshotTestCase.framework'
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework 'CodFis_Helper.framework'
-  install_framework 'FBSnapshotTestCase.framework'
 fi

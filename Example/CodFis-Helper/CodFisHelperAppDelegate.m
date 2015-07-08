@@ -7,7 +7,6 @@
 //
 
 #import "CodFisHelperAppDelegate.h"
-#import "CodFis+Helper.h"
 
 @implementation CodFisHelperAppDelegate
 
@@ -20,6 +19,16 @@
     [helper setSurname:@"Nucifora"];
     
     [helper setName:@"Giuseppe Emanuel"];
+    
+    [helper setBirthDay:9];
+    
+    [helper setBirthMonth:8];
+    
+    [helper setBirthYear:85];
+    
+    [helper setGender:Gender_Man];
+    
+    [helper setState:Italy];
     
     NSLog(@"%@",[helper calculate]);
     
