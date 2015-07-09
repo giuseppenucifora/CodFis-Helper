@@ -20,6 +20,28 @@ it, simply add the following line to your Podfile:
 pod "CodFis-Helper"
 ```
 
+##Usage
+
+```ruby
+CodFis_Helper *helper = [[CodFis_Helper alloc] init];
+
+[helper setSurname:@"Rossi"];
+
+[helper setName:@"Mario"];
+
+[helper setBirthDay:15];
+
+[helper setBirthMonth:11];
+
+[helper setBirthYear:83];
+
+[helper setGender:Gender_Man];
+
+[helper setState:Italy];
+
+[helper setPlace:@"Milano"];
+```
+
 ## Author
 
 Giuseppe Nucifora, me@giuseppenucifora.com

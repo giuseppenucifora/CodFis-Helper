@@ -17,21 +17,21 @@
     
     CodFis_Helper *helper = [[CodFis_Helper alloc] init];
     
-    [helper setSurname:@"Rose"];
+    [helper setSurname:@"Rossi"];
     
-    [helper setName:@"Jean Christophe Domi"];
+    [helper setName:@"Mario"];
     
-    [helper setBirthDay:12];
+    [helper setBirthDay:15];
     
-    [helper setBirthMonth:3];
+    [helper setBirthMonth:11];
     
-    [helper setBirthYear:87];
+    [helper setBirthYear:83];
     
     [helper setGender:Gender_Man];
     
-    [helper setState:OtherCountries];
+    [helper setState:Italy];
     
-    [helper setPlace:@"Maurizio"];
+    [helper setPlace:@"Milano"];
     
     NSLog(@"%@",[[helper calculate] responseError]);
     NSLog(@"%@",[[helper calculate] response]);
