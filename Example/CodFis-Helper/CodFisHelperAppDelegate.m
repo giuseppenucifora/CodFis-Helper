@@ -33,8 +33,10 @@
     
     [helper setPlace:@"Milano"];
     
-    NSLog(@"%@",[[helper calculate] responseError]);
-    NSLog(@"%@",[[helper calculate] response]);
+    CodFisResponse *response = [helper calculate];
+    
+    NSLog(@"%@",[response responseError]);
+    NSLog(@"%@",[response response]);
     
     NSLog(@"%@",[NSNumber numberWithBool:[helper check:@"TESTCFASDASDASD"]]);
     

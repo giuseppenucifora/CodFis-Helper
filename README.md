@@ -40,6 +40,12 @@ CodFis_Helper *helper = [[CodFis_Helper alloc] init];
 [helper setState:Italy];
 
 [helper setPlace:@"Milano"];
+
+CodFisResponse *response = [helper calculate];
+
+NSLog(@"%@",[response responseError]);
+
+NSLog(@"%@",[response response]);
 ```
 
 ## Author
