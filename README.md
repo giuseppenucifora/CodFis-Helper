@@ -17,7 +17,7 @@ CodFis-Helper is available through [CocoaPods](http://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
 ```ruby
-pod "CodFis-Helper"
+pod 'CodFis-Helper' , :git => 'https://github.com/giuseppenucifora/CodFis-Helper.git'
 ```
 
 ##Usage
