@@ -21,6 +21,9 @@
 		6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
 		6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5B8195388D20070C39A /* InfoPlist.strings */; };
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
+		682E62E61B4DD3BA00CD5476 /* codFisCodes.json in Resources */ = {isa = PBXBuildFile; fileRef = 682ECFD31B4DCE9C005659B6 /* codFisCodes.json */; };
+		682E62E91B4E78E500CD5476 /* CodFisResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 682E62E81B4E78E500CD5476 /* CodFisResponse.m */; };
+		682ECFD41B4DCE9C005659B6 /* CodFis+Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = 682ECFD21B4DCE9C005659B6 /* CodFis+Helper.m */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
 		91AC20C3FDDAB28D136716A5 /* Pods_CodFis_Helper_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 522AA81E364FC60CEA095D19 /* Pods_CodFis_Helper_Example.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
@@ -59,6 +62,12 @@
 		6003F5B9195388D20070C39A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
+		682E62E71B4E78E500CD5476 /* CodFisResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CodFisResponse.h; sourceTree = "<group>"; };
+		682E62E81B4E78E500CD5476 /* CodFisResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CodFisResponse.m; sourceTree = "<group>"; };
+		682E62EA1B4E79F200CD5476 /* ResponseConstants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ResponseConstants.h; sourceTree = "<group>"; };
+		682ECFD11B4DCE9C005659B6 /* CodFis+Helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CodFis+Helper.h"; sourceTree = "<group>"; };
+		682ECFD21B4DCE9C005659B6 /* CodFis+Helper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CodFis+Helper.m"; sourceTree = "<group>"; };
+		682ECFD31B4DCE9C005659B6 /* codFisCodes.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = codFisCodes.json; sourceTree = "<group>"; };
 		6840FB021B4D78B5009724FE /* CodFisResources.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CodFisResources.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		6840FB051B4D78B5009724FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		69D594011BE85121E72B1E7C /* CodFis-Helper.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = "CodFis-Helper.podspec"; path = "../CodFis-Helper.podspec"; sourceTree = "<group>"; };
@@ -141,6 +150,7 @@
 		6003F593195388D20070C39A /* Example for CodFis-Helper */ = {
 			isa = PBXGroup;
 			children = (
+				682ECFD01B4DCE9C005659B6 /* CodFis-Helper */,
 				6003F59C195388D20070C39A /* CodFisHelperAppDelegate.h */,
 				6003F59D195388D20070C39A /* CodFisHelperAppDelegate.m */,
 				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
@@ -191,6 +201,20 @@
 				72426C36BAE7F3E98B267A8F /* LICENSE */,
 			);
 			name = "Podspec Metadata";
+			sourceTree = "<group>";
+		};
+		682ECFD01B4DCE9C005659B6 /* CodFis-Helper */ = {
+			isa = PBXGroup;
+			children = (
+				682ECFD11B4DCE9C005659B6 /* CodFis+Helper.h */,
+				682ECFD21B4DCE9C005659B6 /* CodFis+Helper.m */,
+				682E62E71B4E78E500CD5476 /* CodFisResponse.h */,
+				682E62E81B4E78E500CD5476 /* CodFisResponse.m */,
+				682E62EA1B4E79F200CD5476 /* ResponseConstants.h */,
+				682ECFD31B4DCE9C005659B6 /* codFisCodes.json */,
+			);
+			name = "CodFis-Helper";
+			path = "../../CodFis-Helper";
 			sourceTree = "<group>";
 		};
 		6840FB031B4D78B5009724FE /* CodFisResources */ = {
@@ -326,6 +350,7 @@
 			files = (
 				873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */,
 				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
+				682E62E61B4DD3BA00CD5476 /* codFisCodes.json in Resources */,
 				6003F598195388D20070C39A /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -445,7 +470,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				682E62E91B4E78E500CD5476 /* CodFisResponse.m in Sources */,
 				6003F59E195388D20070C39A /* CodFisHelperAppDelegate.m in Sources */,
+				682ECFD41B4DCE9C005659B6 /* CodFis+Helper.m in Sources */,
 				6003F5A7195388D20070C39A /* CodFisHelperViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
 			);
@@ -528,7 +555,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -561,7 +588,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -577,6 +604,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CodFis-Helper/CodFis-Helper-Prefix.pch";
 				INFOPLIST_FILE = "CodFis-Helper/CodFis-Helper-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MODULE_NAME = ExampleApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
@@ -592,6 +620,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CodFis-Helper/CodFis-Helper-Prefix.pch";
 				INFOPLIST_FILE = "CodFis-Helper/CodFis-Helper-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MODULE_NAME = ExampleApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
@@ -720,6 +749,7 @@
 				6840FB081B4D78B5009724FE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

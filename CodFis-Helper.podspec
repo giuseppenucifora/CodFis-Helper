@@ -12,7 +12,6 @@ Pod::Spec.new do |s|
   s.version          = "0.1.0"
   s.summary          = "CodFis-Helper help you to validate Tax Code"
   s.homepage         = "https://github.com/giuseppenucifora/CodFis-Helper"
-  # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
   s.license          = 'MIT'
   s.author           = { "Giuseppe Nucifora" => "me@giuseppenucifora.com" }
   s.source           = { :git => "https://github.com/giuseppenucifora/CodFis-Helper.git", :tag => s.version.to_s }

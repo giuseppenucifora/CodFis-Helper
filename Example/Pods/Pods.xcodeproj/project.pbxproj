@@ -7,412 +7,519 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		11074E61989B7D6C4D6A48B9 /* Pods-CodFis-Helper_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 37A41739BE285995E516A89E /* Pods-CodFis-Helper_Example-dummy.m */; };
-		2493265C0B9059CF970D9275 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F4A79085DC1797B00AE6238 /* Foundation.framework */; };
-		2F080BAAA46563100E1B717C /* CodFis-Helper.bundle in Resources */ = {isa = PBXBuildFile; fileRef = CF4365B2D737A6C7CC786019 /* CodFis-Helper.bundle */; };
-		3EB2B9105A4516E41F9957B6 /* Pods-CodFis-Helper_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E929121CEE9AC625B4A7DED /* Pods-CodFis-Helper_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		449F62CFA3A50C2403282704 /* Pods-CodFis-Helper_Tests-CodFis-Helper-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 025B2DF5C60B5EFAA93F7AC7 /* Pods-CodFis-Helper_Tests-CodFis-Helper-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		45292986E7F060E35D823E9D /* Pods-CodFis-Helper_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = EAA323D680DE2D521730E1CB /* Pods-CodFis-Helper_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		481F435F6E67E4F92ECE6BEE /* CodFis+Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = 25FAC0A570F39489A042CB8E /* CodFis+Helper.m */; };
-		7CE01568C283AADFFDE4BF99 /* Pods-CodFis-Helper_Example-CodFis-Helper-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BDBC59EA856C482155FA935 /* Pods-CodFis-Helper_Example-CodFis-Helper-dummy.m */; };
-		851656C414D747F656B67F2D /* Pods-CodFis-Helper_Example-CodFis-Helper-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 523A582C4C292AE6CEF6606D /* Pods-CodFis-Helper_Example-CodFis-Helper-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		963F5BD90B6E320FC72481A5 /* CodFis+Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = 25FAC0A570F39489A042CB8E /* CodFis+Helper.m */; };
-		A05724DFAAB6C9606BB9AE80 /* CodFis+Helper.h in Headers */ = {isa = PBXBuildFile; fileRef = B1FDD9DA2A375CD772AD096F /* CodFis+Helper.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B62863D89B1380E8F5973296 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F4A79085DC1797B00AE6238 /* Foundation.framework */; };
-		B6DCC253B33F661F9C1510FF /* CodFis+Helper.h in Headers */ = {isa = PBXBuildFile; fileRef = B1FDD9DA2A375CD772AD096F /* CodFis+Helper.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DEFC57FC0163DA4F71E489C2 /* Pods-CodFis-Helper_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D024EEFCB16D07C449EDD7C4 /* Pods-CodFis-Helper_Tests-dummy.m */; };
-		E2700CDF38D4861AA43A610B /* CodFis-Helper.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 9143549ED482126BBDD8B26D /* CodFis-Helper.bundle */; };
-		E6DD9FF9358B60B4B69018FD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F4A79085DC1797B00AE6238 /* Foundation.framework */; };
-		F691DE5B588CADE18173E16A /* Pods-CodFis-Helper_Tests-CodFis-Helper-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 50AF3D48ECEB965DA098048C /* Pods-CodFis-Helper_Tests-CodFis-Helper-dummy.m */; };
-		F922E4ABA9EC1286AB5DEAC0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F4A79085DC1797B00AE6238 /* Foundation.framework */; };
+		031C91CB8C177C02FFC571E4 /* CodFis+Helper.h in Headers */ = {isa = PBXBuildFile; fileRef = F32C98AF806E0BB18648B3BF /* CodFis+Helper.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0600BF2ED7BE9B1195B2DB41 /* Pods-CodFis-Helper_Example-CodFis-Helper-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C626AA80C426E2598707A701 /* Pods-CodFis-Helper_Example-CodFis-Helper-dummy.m */; };
+		073BC680CC143C203E375B07 /* FBSnapshotTestController.m in Sources */ = {isa = PBXBuildFile; fileRef = EBFF7693264042FC86C009B8 /* FBSnapshotTestController.m */; };
+		0E2E2E16478BBC7BE617B677 /* UIImage+Diff.h in Headers */ = {isa = PBXBuildFile; fileRef = 9299C0EDFB29DFADAF1B3DB7 /* UIImage+Diff.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1D1DB8D567DA22599418521E /* UIImage+Diff.m in Sources */ = {isa = PBXBuildFile; fileRef = F9A79DD569CEA854DECE857D /* UIImage+Diff.m */; };
+		2B832CABAFF0DF8ACA788533 /* CodFis-Helper.bundle in Resources */ = {isa = PBXBuildFile; fileRef = FD664738B4AC98F5421FDECA /* CodFis-Helper.bundle */; };
+		35B03C2B9BF4B7BF5DB22F88 /* CodFis+Helper.h in Headers */ = {isa = PBXBuildFile; fileRef = F32C98AF806E0BB18648B3BF /* CodFis+Helper.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		369C92CB96319A8558C3B43F /* UIImage+Compare.h in Headers */ = {isa = PBXBuildFile; fileRef = C436F45B60999A37B19E10FA /* UIImage+Compare.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		405E8A564D97D6861424C3F6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C365C46168A519E94A5E6669 /* Foundation.framework */; };
+		44893898ED38410328FA3CDE /* CodFis-Helper.bundle in Resources */ = {isa = PBXBuildFile; fileRef = EC01D12AD9B85AF49E330F7B /* CodFis-Helper.bundle */; };
+		4546AB92064A07B45F9776C6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C365C46168A519E94A5E6669 /* Foundation.framework */; };
+		5364D12029385932079922D8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C365C46168A519E94A5E6669 /* Foundation.framework */; };
+		5D657BB173296F03E7FB4443 /* Pods-CodFis-Helper_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DAC660232D3F08A9F377140 /* Pods-CodFis-Helper_Tests-dummy.m */; };
+		5DC21A81D72033544B73CA55 /* UIImage+Compare.m in Sources */ = {isa = PBXBuildFile; fileRef = 01B8B5C4053FE34AFE563AD7 /* UIImage+Compare.m */; };
+		682E62EE1B4E79FE00CD5476 /* CodFisResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 682E62EB1B4E79FE00CD5476 /* CodFisResponse.h */; };
+		682E62EF1B4E79FE00CD5476 /* CodFisResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 682E62EC1B4E79FE00CD5476 /* CodFisResponse.m */; };
+		682E62F01B4E79FE00CD5476 /* ResponseConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = 682E62ED1B4E79FE00CD5476 /* ResponseConstants.h */; };
+		682E62F11B4E7C7200CD5476 /* CodFis+Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = 23A643926CE2B8102E672350 /* CodFis+Helper.m */; };
+		682E62F21B4E7C7800CD5476 /* CodFis+Helper.h in Headers */ = {isa = PBXBuildFile; fileRef = F32C98AF806E0BB18648B3BF /* CodFis+Helper.h */; };
+		682E62F31B4E7D0100CD5476 /* CodFisResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 682E62EB1B4E79FE00CD5476 /* CodFisResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		682E62F41B4E7D0500CD5476 /* ResponseConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = 682E62ED1B4E79FE00CD5476 /* ResponseConstants.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		682E62F51B4E7D0A00CD5476 /* CodFisResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 682E62EC1B4E79FE00CD5476 /* CodFisResponse.m */; };
+		6A67C66B8A8FFCC0827BD3A2 /* CodFis+Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = 23A643926CE2B8102E672350 /* CodFis+Helper.m */; };
+		6CBE395BA6F457E7F5F9AEC4 /* FBSnapshotTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 12DD0B70AA5243B80C0A4D11 /* FBSnapshotTestCase.m */; };
+		739194CF3C6A82DACFE89C77 /* FBSnapshotTestCasePlatform.m in Sources */ = {isa = PBXBuildFile; fileRef = 5482DE07811DEC838989B93B /* FBSnapshotTestCasePlatform.m */; };
+		740E910EA5092ADEAE386E1B /* FBSnapshotTestController.h in Headers */ = {isa = PBXBuildFile; fileRef = AD62239DD5E49C3CF9D789AC /* FBSnapshotTestController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7FE1C21ED827195F55721BA4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C365C46168A519E94A5E6669 /* Foundation.framework */; };
+		87B279D9409EC3CE03726F7C /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD63618175B057F0186E4AE6 /* XCTest.framework */; };
+		8A288069F5C2D41575250F06 /* Pods-CodFis-Helper_Tests-CodFis-Helper-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F03A500FCEBC1C2A145D7251 /* Pods-CodFis-Helper_Tests-CodFis-Helper-dummy.m */; };
+		8A99FDEF2CF0C6A18E9FCD81 /* FBSnapshotTestCasePlatform.h in Headers */ = {isa = PBXBuildFile; fileRef = 370B3D23B94796BF139C0F91 /* FBSnapshotTestCasePlatform.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8C944B69107EE85CEF8258AF /* Pods-CodFis-Helper_Tests-FBSnapshotTestCase-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D2DD1F06D9A0C8B1D20D9274 /* Pods-CodFis-Helper_Tests-FBSnapshotTestCase-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		922637DC4ED13815F229AF5E /* Pods-CodFis-Helper_Example-CodFis-Helper-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 14064CFC1183DBE30A794162 /* Pods-CodFis-Helper_Example-CodFis-Helper-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BABC9DA7AE6102D4B7E9935A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C365C46168A519E94A5E6669 /* Foundation.framework */; };
+		BF0556483AF2D93604F9C3B2 /* Pods-CodFis-Helper_Tests-CodFis-Helper-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A25DFABD25743ED581C7F519 /* Pods-CodFis-Helper_Tests-CodFis-Helper-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C4E8894BB7D6FDD569A0A729 /* Pods-CodFis-Helper_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AB2418C881E791EC426AF2F7 /* Pods-CodFis-Helper_Example-dummy.m */; };
+		D4B919AA85D6BF7616DAEEF3 /* Pods-CodFis-Helper_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = CC62F644A0DDD1CB5C42BB60 /* Pods-CodFis-Helper_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F1237B00BE9071CBF7D7629E /* CodFis+Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = 23A643926CE2B8102E672350 /* CodFis+Helper.m */; };
+		F76DA07BC597DE093DA8391B /* Pods-CodFis-Helper_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5132299E12A9D0AE2C2AFF36 /* Pods-CodFis-Helper_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FAE650F6DE4BAB8D71F80DA6 /* FBSnapshotTestCase.h in Headers */ = {isa = PBXBuildFile; fileRef = 532F7FA1A3208D2C1928147D /* FBSnapshotTestCase.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FB6A7C48C5006786C97CC371 /* Pods-CodFis-Helper_Tests-FBSnapshotTestCase-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CD52A4ABB9E24A12FDA11B4 /* Pods-CodFis-Helper_Tests-FBSnapshotTestCase-dummy.m */; };
+		FBD8879866F01693FF65E0D3 /* SwiftSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 282F296058BB95E35F588B28 /* SwiftSupport.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		0681F166833EF3C79651F4A2 /* PBXContainerItemProxy */ = {
+		0DE63DAAC610BAA0352E0217 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 6B1DCE258C608240329356C3 /* Project object */;
+			containerPortal = D4EA3A0DBDEDC1A3544B014D /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 1280F924D5223B5FEB6CF976;
+			remoteGlobalIDString = FD508D06D3936BDA8CAF7646;
 			remoteInfo = "Pods-CodFis-Helper_Example-CodFis-Helper";
 		};
-		1F0136A32BF831CB14865356 /* PBXContainerItemProxy */ = {
+		20FAD1A64B56182A5CFE0092 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 6B1DCE258C608240329356C3 /* Project object */;
+			containerPortal = D4EA3A0DBDEDC1A3544B014D /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 25C88DDA6FC26EF63AFCBCCE;
-			remoteInfo = "Pods-CodFis-Helper_Example-CodFis-Helper-CodFis-Helper";
-		};
-		256E65C7410233D852ABB86D /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 6B1DCE258C608240329356C3 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = E8B2CB4980C2740F02C576A5;
+			remoteGlobalIDString = A985A3E0A157915C3311A610;
 			remoteInfo = "Pods-CodFis-Helper_Tests-CodFis-Helper-CodFis-Helper";
 		};
-		4F0E7AD1E0E8496E97999D69 /* PBXContainerItemProxy */ = {
+		4C1637BB58BE42A541100530 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 6B1DCE258C608240329356C3 /* Project object */;
+			containerPortal = D4EA3A0DBDEDC1A3544B014D /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 050961C76F8E2B642599D81B;
+			remoteGlobalIDString = ADB261BDD4DF67A60AAD892E;
+			remoteInfo = "Pods-CodFis-Helper_Example-CodFis-Helper-CodFis-Helper";
+		};
+		64A5F4DE937D5A82FB523A72 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D4EA3A0DBDEDC1A3544B014D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6FF4CD71E232ACAB02B32539;
+			remoteInfo = "Pods-CodFis-Helper_Tests-FBSnapshotTestCase";
+		};
+		C056D5024005C284994D1973 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D4EA3A0DBDEDC1A3544B014D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9E17CB4EA20D4DB70300B8AF;
 			remoteInfo = "Pods-CodFis-Helper_Tests-CodFis-Helper";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		025B2DF5C60B5EFAA93F7AC7 /* Pods-CodFis-Helper_Tests-CodFis-Helper-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Pods-CodFis-Helper_Tests-CodFis-Helper-umbrella.h"; path = "../Pods-CodFis-Helper_Tests-CodFis-Helper/Pods-CodFis-Helper_Tests-CodFis-Helper-umbrella.h"; sourceTree = "<group>"; };
-		1F74CF067FBF935D1DBE1061 /* Pods-CodFis-Helper_Example-CodFis-Helper-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-CodFis-Helper_Example-CodFis-Helper-prefix.pch"; sourceTree = "<group>"; };
-		1FCADDD31E2107C49EE5C8D1 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = Info.plist; path = "../Pods-CodFis-Helper_Tests-CodFis-Helper/Info.plist"; sourceTree = "<group>"; };
-		2182BB28065C6702435D3706 /* CodFis_Helper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CodFis_Helper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		227AB93AE90ECC0F4F909249 /* Pods-CodFis-Helper_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CodFis-Helper_Example-resources.sh"; sourceTree = "<group>"; };
-		25FAC0A570F39489A042CB8E /* CodFis+Helper.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CodFis+Helper.m"; sourceTree = "<group>"; };
-		26C7A527A437B7BE3C31CCDF /* Pods-CodFis-Helper_Example-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-CodFis-Helper_Example-environment.h"; sourceTree = "<group>"; };
-		29A5EE90118EF99E5EA98758 /* Pods-CodFis-Helper_Tests-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-CodFis-Helper_Tests-environment.h"; sourceTree = "<group>"; };
-		304363FFF09D62DE2EF382D5 /* Pods-CodFis-Helper_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-CodFis-Helper_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		32F0570E78B9D17D5993A043 /* Pods-CodFis-Helper_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CodFis-Helper_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		33F911D399A5C8AFFB8B1985 /* Pods-CodFis-Helper_Tests-CodFis-Helper.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CodFis-Helper_Tests-CodFis-Helper.xcconfig"; path = "../Pods-CodFis-Helper_Tests-CodFis-Helper/Pods-CodFis-Helper_Tests-CodFis-Helper.xcconfig"; sourceTree = "<group>"; };
-		37A41739BE285995E516A89E /* Pods-CodFis-Helper_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-CodFis-Helper_Example-dummy.m"; sourceTree = "<group>"; };
-		3F4A79085DC1797B00AE6238 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		417F12A1507D5B5D41F4DD5A /* Pods-CodFis-Helper_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CodFis-Helper_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		4BDBC59EA856C482155FA935 /* Pods-CodFis-Helper_Example-CodFis-Helper-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-CodFis-Helper_Example-CodFis-Helper-dummy.m"; sourceTree = "<group>"; };
-		50AF3D48ECEB965DA098048C /* Pods-CodFis-Helper_Tests-CodFis-Helper-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "Pods-CodFis-Helper_Tests-CodFis-Helper-dummy.m"; path = "../Pods-CodFis-Helper_Tests-CodFis-Helper/Pods-CodFis-Helper_Tests-CodFis-Helper-dummy.m"; sourceTree = "<group>"; };
-		523A582C4C292AE6CEF6606D /* Pods-CodFis-Helper_Example-CodFis-Helper-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-CodFis-Helper_Example-CodFis-Helper-umbrella.h"; sourceTree = "<group>"; };
-		5C84D4CFA0A4060CF11A6229 /* Pods-CodFis-Helper_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-CodFis-Helper_Example.modulemap"; sourceTree = "<group>"; };
-		7E0A18BDADD15CAC9C921C28 /* Pods-CodFis-Helper_Tests-CodFis-Helper.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; name = "Pods-CodFis-Helper_Tests-CodFis-Helper.modulemap"; path = "../Pods-CodFis-Helper_Tests-CodFis-Helper/Pods-CodFis-Helper_Tests-CodFis-Helper.modulemap"; sourceTree = "<group>"; };
-		7E7C77F8F046D5A5E0CA05BA /* Pods_CodFis_Helper_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CodFis_Helper_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		8155726F02E9DAE60CB86CEC /* Pods-CodFis-Helper_Example-CodFis-Helper.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-CodFis-Helper_Example-CodFis-Helper.modulemap"; sourceTree = "<group>"; };
-		839B03B6C71B45F23920E3BC /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8DF46EA665C570E0E9DF6A7C /* Pods-CodFis-Helper_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CodFis-Helper_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		8E929121CEE9AC625B4A7DED /* Pods-CodFis-Helper_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-CodFis-Helper_Tests-umbrella.h"; sourceTree = "<group>"; };
-		9143549ED482126BBDD8B26D /* CodFis-Helper.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "CodFis-Helper.bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
-		97926B30708EFCA6D48E507D /* Pods-CodFis-Helper_Example-CodFis-Helper.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CodFis-Helper_Example-CodFis-Helper.xcconfig"; sourceTree = "<group>"; };
-		A2C6B1063B93941C8FFA6A6C /* Pods-CodFis-Helper_Tests-CodFis-Helper-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Pods-CodFis-Helper_Tests-CodFis-Helper-prefix.pch"; path = "../Pods-CodFis-Helper_Tests-CodFis-Helper/Pods-CodFis-Helper_Tests-CodFis-Helper-prefix.pch"; sourceTree = "<group>"; };
-		ABDFEB9B10B60395DA5E2AD3 /* Pods-CodFis-Helper_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CodFis-Helper_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		B1FDD9DA2A375CD772AD096F /* CodFis+Helper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CodFis+Helper.h"; sourceTree = "<group>"; };
-		B635CAC21080789C6F301EC6 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		BB9FB4E6B5F7EE49CD9D6734 /* Pods-CodFis-Helper_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-CodFis-Helper_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		C131402EAC8832B05EE58495 /* Pods-CodFis-Helper_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CodFis-Helper_Example.release.xcconfig"; sourceTree = "<group>"; };
-		CF4365B2D737A6C7CC786019 /* CodFis-Helper.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "CodFis-Helper.bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
-		CF6DB55917EE521E8F56B5F5 /* Pods-CodFis-Helper_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-CodFis-Helper_Tests.modulemap"; sourceTree = "<group>"; };
-		D024EEFCB16D07C449EDD7C4 /* Pods-CodFis-Helper_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-CodFis-Helper_Tests-dummy.m"; sourceTree = "<group>"; };
-		D7A4D7D3E1A0347D3C262438 /* Pods-CodFis-Helper_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CodFis-Helper_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		D83F6486D40A8F7ACC6FA555 /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		DE6F36411C30C5BFBF0BF932 /* Pods-CodFis-Helper_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CodFis-Helper_Tests-resources.sh"; sourceTree = "<group>"; };
-		E17171040337CEAC6A77768C /* Pods_CodFis_Helper_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CodFis_Helper_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		E29A7285045F682504DA3945 /* CodFis_Helper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CodFis_Helper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		E31034BA95DA6EF7553F9912 /* Pods-CodFis-Helper_Tests-CodFis-Helper-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CodFis-Helper_Tests-CodFis-Helper-Private.xcconfig"; path = "../Pods-CodFis-Helper_Tests-CodFis-Helper/Pods-CodFis-Helper_Tests-CodFis-Helper-Private.xcconfig"; sourceTree = "<group>"; };
-		E8CE77C86DF3B2980F0A6F96 /* Pods-CodFis-Helper_Example-CodFis-Helper-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CodFis-Helper_Example-CodFis-Helper-Private.xcconfig"; sourceTree = "<group>"; };
-		E9D96525B175CC0C98D68AF4 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		EAA323D680DE2D521730E1CB /* Pods-CodFis-Helper_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-CodFis-Helper_Example-umbrella.h"; sourceTree = "<group>"; };
-		FA9FE55D03BF8EDD1452679A /* Pods-CodFis-Helper_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CodFis-Helper_Tests-frameworks.sh"; sourceTree = "<group>"; };
-		FAFD17AAE88E8248F790535E /* Pods-CodFis-Helper_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CodFis-Helper_Example-frameworks.sh"; sourceTree = "<group>"; };
+		0086C8E8CA0F31F4307CF34A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		01B8B5C4053FE34AFE563AD7 /* UIImage+Compare.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Compare.m"; path = "FBSnapshotTestCase/UIImage+Compare.m"; sourceTree = "<group>"; };
+		07A5C1352836E777DA3ECC66 /* Pods-CodFis-Helper_Example-CodFis-Helper-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CodFis-Helper_Example-CodFis-Helper-Private.xcconfig"; sourceTree = "<group>"; };
+		08890B9E1C29D83B7B7A681E /* Pods-CodFis-Helper_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CodFis-Helper_Example-resources.sh"; sourceTree = "<group>"; };
+		10EF7823C2D42E8DC85DAEEC /* Pods-CodFis-Helper_Tests-CodFis-Helper.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CodFis-Helper_Tests-CodFis-Helper.xcconfig"; path = "../Pods-CodFis-Helper_Tests-CodFis-Helper/Pods-CodFis-Helper_Tests-CodFis-Helper.xcconfig"; sourceTree = "<group>"; };
+		12DD0B70AA5243B80C0A4D11 /* FBSnapshotTestCase.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSnapshotTestCase.m; path = FBSnapshotTestCase/FBSnapshotTestCase.m; sourceTree = "<group>"; };
+		14064CFC1183DBE30A794162 /* Pods-CodFis-Helper_Example-CodFis-Helper-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-CodFis-Helper_Example-CodFis-Helper-umbrella.h"; sourceTree = "<group>"; };
+		23A643926CE2B8102E672350 /* CodFis+Helper.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CodFis+Helper.m"; sourceTree = "<group>"; };
+		282F296058BB95E35F588B28 /* SwiftSupport.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftSupport.swift; path = FBSnapshotTestCase/SwiftSupport.swift; sourceTree = "<group>"; };
+		2BCAF1F451FF05D041D2B294 /* Pods-CodFis-Helper_Example-CodFis-Helper.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CodFis-Helper_Example-CodFis-Helper.xcconfig"; sourceTree = "<group>"; };
+		2F7B87844885414B46824173 /* Pods-CodFis-Helper_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CodFis-Helper_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		34A76A3ADD9DC1BA26BCE1EE /* Pods-CodFis-Helper_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-CodFis-Helper_Tests.modulemap"; sourceTree = "<group>"; };
+		370B3D23B94796BF139C0F91 /* FBSnapshotTestCasePlatform.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSnapshotTestCasePlatform.h; path = FBSnapshotTestCase/FBSnapshotTestCasePlatform.h; sourceTree = "<group>"; };
+		4341403393F42E8688A70ECE /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		44295926F50BE228F3664811 /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		4734074D35BE2016E7F32A5D /* Pods-CodFis-Helper_Tests-FBSnapshotTestCase-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CodFis-Helper_Tests-FBSnapshotTestCase-Private.xcconfig"; sourceTree = "<group>"; };
+		4BE73E65AC588F6A9D2D5461 /* Pods-CodFis-Helper_Tests-FBSnapshotTestCase-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-CodFis-Helper_Tests-FBSnapshotTestCase-prefix.pch"; sourceTree = "<group>"; };
+		505F5C1DE21C7441976EF295 /* Pods-CodFis-Helper_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CodFis-Helper_Example-frameworks.sh"; sourceTree = "<group>"; };
+		512D0B961D51A3D0D22DAFD8 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5132299E12A9D0AE2C2AFF36 /* Pods-CodFis-Helper_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-CodFis-Helper_Example-umbrella.h"; sourceTree = "<group>"; };
+		532F7FA1A3208D2C1928147D /* FBSnapshotTestCase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSnapshotTestCase.h; path = FBSnapshotTestCase/FBSnapshotTestCase.h; sourceTree = "<group>"; };
+		5353614EDCA7223839D29985 /* Pods-CodFis-Helper_Tests-CodFis-Helper.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; name = "Pods-CodFis-Helper_Tests-CodFis-Helper.modulemap"; path = "../Pods-CodFis-Helper_Tests-CodFis-Helper/Pods-CodFis-Helper_Tests-CodFis-Helper.modulemap"; sourceTree = "<group>"; };
+		5482DE07811DEC838989B93B /* FBSnapshotTestCasePlatform.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSnapshotTestCasePlatform.m; path = FBSnapshotTestCase/FBSnapshotTestCasePlatform.m; sourceTree = "<group>"; };
+		54A161A13D2B129C3A12E4FB /* Pods-CodFis-Helper_Tests-CodFis-Helper-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CodFis-Helper_Tests-CodFis-Helper-Private.xcconfig"; path = "../Pods-CodFis-Helper_Tests-CodFis-Helper/Pods-CodFis-Helper_Tests-CodFis-Helper-Private.xcconfig"; sourceTree = "<group>"; };
+		59EE78971A9DEEC99AA3EF5F /* Pods-CodFis-Helper_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CodFis-Helper_Tests-resources.sh"; sourceTree = "<group>"; };
+		67F8259C7D5F38C6431A19CC /* Pods-CodFis-Helper_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-CodFis-Helper_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		682E62EB1B4E79FE00CD5476 /* CodFisResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CodFisResponse.h; sourceTree = "<group>"; };
+		682E62EC1B4E79FE00CD5476 /* CodFisResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CodFisResponse.m; sourceTree = "<group>"; };
+		682E62ED1B4E79FE00CD5476 /* ResponseConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResponseConstants.h; sourceTree = "<group>"; };
+		70155AC6E63A878F87041E50 /* Pods-CodFis-Helper_Example-CodFis-Helper.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-CodFis-Helper_Example-CodFis-Helper.modulemap"; sourceTree = "<group>"; };
+		70B5C50D55B81F20E9F3F262 /* Pods-CodFis-Helper_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CodFis-Helper_Example.release.xcconfig"; sourceTree = "<group>"; };
+		7D4FB9CDACCA193E1EBCD14F /* Pods-CodFis-Helper_Tests-CodFis-Helper-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Pods-CodFis-Helper_Tests-CodFis-Helper-prefix.pch"; path = "../Pods-CodFis-Helper_Tests-CodFis-Helper/Pods-CodFis-Helper_Tests-CodFis-Helper-prefix.pch"; sourceTree = "<group>"; };
+		7DAC660232D3F08A9F377140 /* Pods-CodFis-Helper_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-CodFis-Helper_Tests-dummy.m"; sourceTree = "<group>"; };
+		7E098244EEE0FC7D21152662 /* Pods-CodFis-Helper_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CodFis-Helper_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		84AFCE6852F1F870F621D5D0 /* Pods-CodFis-Helper_Tests-FBSnapshotTestCase.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-CodFis-Helper_Tests-FBSnapshotTestCase.modulemap"; sourceTree = "<group>"; };
+		852A9F9A0A8E0D13425DB2B7 /* Pods-CodFis-Helper_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CodFis-Helper_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		8788A7D8FE24D68EE1998CCC /* CodFis_Helper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CodFis_Helper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		887AFB6C1A73EF4FC4354128 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = Info.plist; path = "../Pods-CodFis-Helper_Tests-CodFis-Helper/Info.plist"; sourceTree = "<group>"; };
+		8A1249310547586F4C7698A0 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9299C0EDFB29DFADAF1B3DB7 /* UIImage+Diff.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+Diff.h"; path = "FBSnapshotTestCase/UIImage+Diff.h"; sourceTree = "<group>"; };
+		9CD52A4ABB9E24A12FDA11B4 /* Pods-CodFis-Helper_Tests-FBSnapshotTestCase-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-CodFis-Helper_Tests-FBSnapshotTestCase-dummy.m"; sourceTree = "<group>"; };
+		A25DFABD25743ED581C7F519 /* Pods-CodFis-Helper_Tests-CodFis-Helper-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Pods-CodFis-Helper_Tests-CodFis-Helper-umbrella.h"; path = "../Pods-CodFis-Helper_Tests-CodFis-Helper/Pods-CodFis-Helper_Tests-CodFis-Helper-umbrella.h"; sourceTree = "<group>"; };
+		A72BCEB24BC3FE3F8D88FD88 /* Pods-CodFis-Helper_Example-CodFis-Helper-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-CodFis-Helper_Example-CodFis-Helper-prefix.pch"; sourceTree = "<group>"; };
+		AB2418C881E791EC426AF2F7 /* Pods-CodFis-Helper_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-CodFis-Helper_Example-dummy.m"; sourceTree = "<group>"; };
+		AD62239DD5E49C3CF9D789AC /* FBSnapshotTestController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSnapshotTestController.h; path = FBSnapshotTestCase/FBSnapshotTestController.h; sourceTree = "<group>"; };
+		B649BBD084134EB15C749FB0 /* FBSnapshotTestCase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FBSnapshotTestCase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF385E8ACED1DFB8FDF19959 /* Pods-CodFis-Helper_Tests-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-CodFis-Helper_Tests-environment.h"; sourceTree = "<group>"; };
+		BF870BBFA4A3E87E2F197709 /* Pods-CodFis-Helper_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CodFis-Helper_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		C365C46168A519E94A5E6669 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		C436F45B60999A37B19E10FA /* UIImage+Compare.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+Compare.h"; path = "FBSnapshotTestCase/UIImage+Compare.h"; sourceTree = "<group>"; };
+		C626AA80C426E2598707A701 /* Pods-CodFis-Helper_Example-CodFis-Helper-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-CodFis-Helper_Example-CodFis-Helper-dummy.m"; sourceTree = "<group>"; };
+		CC62F644A0DDD1CB5C42BB60 /* Pods-CodFis-Helper_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-CodFis-Helper_Tests-umbrella.h"; sourceTree = "<group>"; };
+		D2DD1F06D9A0C8B1D20D9274 /* Pods-CodFis-Helper_Tests-FBSnapshotTestCase-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-CodFis-Helper_Tests-FBSnapshotTestCase-umbrella.h"; sourceTree = "<group>"; };
+		DAADE4540CEBD84F453F0CB8 /* CodFis_Helper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CodFis_Helper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E2B222A324840986F4A11E42 /* Pods-CodFis-Helper_Tests-FBSnapshotTestCase.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CodFis-Helper_Tests-FBSnapshotTestCase.xcconfig"; sourceTree = "<group>"; };
+		E3375BFF17B1FEB80BD8A778 /* Pods-CodFis-Helper_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CodFis-Helper_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		EBFF7693264042FC86C009B8 /* FBSnapshotTestController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSnapshotTestController.m; path = FBSnapshotTestCase/FBSnapshotTestController.m; sourceTree = "<group>"; };
+		EC01D12AD9B85AF49E330F7B /* CodFis-Helper.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "CodFis-Helper.bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE3F94B3C8F6609981F7B3B6 /* Pods_CodFis_Helper_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CodFis_Helper_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F03A500FCEBC1C2A145D7251 /* Pods-CodFis-Helper_Tests-CodFis-Helper-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "Pods-CodFis-Helper_Tests-CodFis-Helper-dummy.m"; path = "../Pods-CodFis-Helper_Tests-CodFis-Helper/Pods-CodFis-Helper_Tests-CodFis-Helper-dummy.m"; sourceTree = "<group>"; };
+		F2D2D73B894DADA67EFD0474 /* Pods-CodFis-Helper_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CodFis-Helper_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		F32C98AF806E0BB18648B3BF /* CodFis+Helper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CodFis+Helper.h"; sourceTree = "<group>"; };
+		F5D8A5EE7634B0A698F7EB0E /* Pods_CodFis_Helper_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CodFis_Helper_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F61D570EC3ED6D3F44AA67C1 /* Pods-CodFis-Helper_Example-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-CodFis-Helper_Example-environment.h"; sourceTree = "<group>"; };
+		F7C52D2D5A4C63277D5E58F6 /* Pods-CodFis-Helper_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-CodFis-Helper_Example.modulemap"; sourceTree = "<group>"; };
+		F9A79DD569CEA854DECE857D /* UIImage+Diff.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Diff.m"; path = "FBSnapshotTestCase/UIImage+Diff.m"; sourceTree = "<group>"; };
+		FCD3387B5D75877C4A3C8E7D /* Pods-CodFis-Helper_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-CodFis-Helper_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		FD63618175B057F0186E4AE6 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		FD664738B4AC98F5421FDECA /* CodFis-Helper.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "CodFis-Helper.bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		1D103E179802ECCEA1057298 /* Frameworks */ = {
+		1CE5922711D49B3D8303D304 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		43152B3E4EF24553B2142677 /* Frameworks */ = {
+		44A13215044126705E5B4B13 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F922E4ABA9EC1286AB5DEAC0 /* Foundation.framework in Frameworks */,
+				BABC9DA7AE6102D4B7E9935A /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9FB91A280C2352B665514659 /* Frameworks */ = {
+		7B33CE02E340B5B57459C1FA /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2493265C0B9059CF970D9275 /* Foundation.framework in Frameworks */,
+				405E8A564D97D6861424C3F6 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A06FC575882ACEFB663C545C /* Frameworks */ = {
+		A459BED9F830649B8392A2D3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4546AB92064A07B45F9776C6 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BA4E27B64C2216C606127919 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7FE1C21ED827195F55721BA4 /* Foundation.framework in Frameworks */,
+				87B279D9409EC3CE03726F7C /* XCTest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DDB5DF1E04C02888C3D173DE /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A6A529DC2DCC94E88BE64F6D /* Frameworks */ = {
+		E66356CA5B50684B079406D4 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E6DD9FF9358B60B4B69018FD /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C817FC912BFE15A1E0333B95 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				B62863D89B1380E8F5973296 /* Foundation.framework in Frameworks */,
+				5364D12029385932079922D8 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0FC088DB40E882985FE953A4 /* Pods-CodFis-Helper_Example */ = {
+		00916F2B25E0A20A290924CF /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				E9D96525B175CC0C98D68AF4 /* Info.plist */,
-				5C84D4CFA0A4060CF11A6229 /* Pods-CodFis-Helper_Example.modulemap */,
-				BB9FB4E6B5F7EE49CD9D6734 /* Pods-CodFis-Helper_Example-acknowledgements.markdown */,
-				32F0570E78B9D17D5993A043 /* Pods-CodFis-Helper_Example-acknowledgements.plist */,
-				37A41739BE285995E516A89E /* Pods-CodFis-Helper_Example-dummy.m */,
-				26C7A527A437B7BE3C31CCDF /* Pods-CodFis-Helper_Example-environment.h */,
-				FAFD17AAE88E8248F790535E /* Pods-CodFis-Helper_Example-frameworks.sh */,
-				227AB93AE90ECC0F4F909249 /* Pods-CodFis-Helper_Example-resources.sh */,
-				EAA323D680DE2D521730E1CB /* Pods-CodFis-Helper_Example-umbrella.h */,
-				417F12A1507D5B5D41F4DD5A /* Pods-CodFis-Helper_Example.debug.xcconfig */,
-				C131402EAC8832B05EE58495 /* Pods-CodFis-Helper_Example.release.xcconfig */,
+				4493B13CF4805C0EA60D2116 /* CodFis-Helper */,
 			);
-			name = "Pods-CodFis-Helper_Example";
-			path = "Target Support Files/Pods-CodFis-Helper_Example";
+			name = "Development Pods";
 			sourceTree = "<group>";
 		};
-		15349A31A6A652D45C258301 /* Support Files */ = {
+		00D848D38C824C8977BEBBA6 /* Pods-CodFis-Helper_Tests */ = {
 			isa = PBXGroup;
 			children = (
-				B635CAC21080789C6F301EC6 /* Info.plist */,
-				1FCADDD31E2107C49EE5C8D1 /* Info.plist */,
-				8155726F02E9DAE60CB86CEC /* Pods-CodFis-Helper_Example-CodFis-Helper.modulemap */,
-				97926B30708EFCA6D48E507D /* Pods-CodFis-Helper_Example-CodFis-Helper.xcconfig */,
-				E8CE77C86DF3B2980F0A6F96 /* Pods-CodFis-Helper_Example-CodFis-Helper-Private.xcconfig */,
-				4BDBC59EA856C482155FA935 /* Pods-CodFis-Helper_Example-CodFis-Helper-dummy.m */,
-				1F74CF067FBF935D1DBE1061 /* Pods-CodFis-Helper_Example-CodFis-Helper-prefix.pch */,
-				523A582C4C292AE6CEF6606D /* Pods-CodFis-Helper_Example-CodFis-Helper-umbrella.h */,
-				7E0A18BDADD15CAC9C921C28 /* Pods-CodFis-Helper_Tests-CodFis-Helper.modulemap */,
-				33F911D399A5C8AFFB8B1985 /* Pods-CodFis-Helper_Tests-CodFis-Helper.xcconfig */,
-				E31034BA95DA6EF7553F9912 /* Pods-CodFis-Helper_Tests-CodFis-Helper-Private.xcconfig */,
-				50AF3D48ECEB965DA098048C /* Pods-CodFis-Helper_Tests-CodFis-Helper-dummy.m */,
-				A2C6B1063B93941C8FFA6A6C /* Pods-CodFis-Helper_Tests-CodFis-Helper-prefix.pch */,
-				025B2DF5C60B5EFAA93F7AC7 /* Pods-CodFis-Helper_Tests-CodFis-Helper-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/Pods-CodFis-Helper_Example-CodFis-Helper";
-			sourceTree = "<group>";
-		};
-		2069765619EA52F851A2C3A9 /* Targets Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				0FC088DB40E882985FE953A4 /* Pods-CodFis-Helper_Example */,
-				7C846CA47F557B85A7B43423 /* Pods-CodFis-Helper_Tests */,
-			);
-			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
-		2E7E0FBC978EDFB1374BE981 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				BA5B624CC2A860B11A72A477 /* iOS */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		3B86763168303742AC86029B /* CodFis-Helper */ = {
-			isa = PBXGroup;
-			children = (
-				C5ED7B1A7425FFAD071D6F99 /* CodFis-Helper */,
-				15349A31A6A652D45C258301 /* Support Files */,
-			);
-			name = "CodFis-Helper";
-			path = ../..;
-			sourceTree = "<group>";
-		};
-		7C846CA47F557B85A7B43423 /* Pods-CodFis-Helper_Tests */ = {
-			isa = PBXGroup;
-			children = (
-				839B03B6C71B45F23920E3BC /* Info.plist */,
-				CF6DB55917EE521E8F56B5F5 /* Pods-CodFis-Helper_Tests.modulemap */,
-				304363FFF09D62DE2EF382D5 /* Pods-CodFis-Helper_Tests-acknowledgements.markdown */,
-				8DF46EA665C570E0E9DF6A7C /* Pods-CodFis-Helper_Tests-acknowledgements.plist */,
-				D024EEFCB16D07C449EDD7C4 /* Pods-CodFis-Helper_Tests-dummy.m */,
-				29A5EE90118EF99E5EA98758 /* Pods-CodFis-Helper_Tests-environment.h */,
-				FA9FE55D03BF8EDD1452679A /* Pods-CodFis-Helper_Tests-frameworks.sh */,
-				DE6F36411C30C5BFBF0BF932 /* Pods-CodFis-Helper_Tests-resources.sh */,
-				8E929121CEE9AC625B4A7DED /* Pods-CodFis-Helper_Tests-umbrella.h */,
-				ABDFEB9B10B60395DA5E2AD3 /* Pods-CodFis-Helper_Tests.debug.xcconfig */,
-				D7A4D7D3E1A0347D3C262438 /* Pods-CodFis-Helper_Tests.release.xcconfig */,
+				8A1249310547586F4C7698A0 /* Info.plist */,
+				34A76A3ADD9DC1BA26BCE1EE /* Pods-CodFis-Helper_Tests.modulemap */,
+				67F8259C7D5F38C6431A19CC /* Pods-CodFis-Helper_Tests-acknowledgements.markdown */,
+				852A9F9A0A8E0D13425DB2B7 /* Pods-CodFis-Helper_Tests-acknowledgements.plist */,
+				7DAC660232D3F08A9F377140 /* Pods-CodFis-Helper_Tests-dummy.m */,
+				BF385E8ACED1DFB8FDF19959 /* Pods-CodFis-Helper_Tests-environment.h */,
+				BF870BBFA4A3E87E2F197709 /* Pods-CodFis-Helper_Tests-frameworks.sh */,
+				59EE78971A9DEEC99AA3EF5F /* Pods-CodFis-Helper_Tests-resources.sh */,
+				CC62F644A0DDD1CB5C42BB60 /* Pods-CodFis-Helper_Tests-umbrella.h */,
+				2F7B87844885414B46824173 /* Pods-CodFis-Helper_Tests.debug.xcconfig */,
+				7E098244EEE0FC7D21152662 /* Pods-CodFis-Helper_Tests.release.xcconfig */,
 			);
 			name = "Pods-CodFis-Helper_Tests";
 			path = "Target Support Files/Pods-CodFis-Helper_Tests";
 			sourceTree = "<group>";
 		};
-		BA5B624CC2A860B11A72A477 /* iOS */ = {
+		1FF3FBB6A7B6FF086C712CEF /* SwiftSupport */ = {
 			isa = PBXGroup;
 			children = (
-				3F4A79085DC1797B00AE6238 /* Foundation.framework */,
+				282F296058BB95E35F588B28 /* SwiftSupport.swift */,
 			);
-			name = iOS;
+			name = SwiftSupport;
 			sourceTree = "<group>";
 		};
-		BD48D6AC8A4410BEB45F03C4 /* Development Pods */ = {
+		2D6888ABBD12C6F6F6883504 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				3B86763168303742AC86029B /* CodFis-Helper */,
+				BE306EE743CE0C6DE225C9CE /* FBSnapshotTestCase */,
 			);
-			name = "Development Pods";
+			name = Pods;
 			sourceTree = "<group>";
 		};
-		C5ED7B1A7425FFAD071D6F99 /* CodFis-Helper */ = {
+		4493B13CF4805C0EA60D2116 /* CodFis-Helper */ = {
 			isa = PBXGroup;
 			children = (
-				B1FDD9DA2A375CD772AD096F /* CodFis+Helper.h */,
-				25FAC0A570F39489A042CB8E /* CodFis+Helper.m */,
+				B877287A7F992BE98F807533 /* CodFis-Helper */,
+				C73CA15A5E473038C22DB1D9 /* Support Files */,
 			);
-			path = "CodFis-Helper";
+			name = "CodFis-Helper";
+			path = ../..;
 			sourceTree = "<group>";
 		};
-		EFA2CBEB30E7F7542BD9CE8C /* Products */ = {
+		5D250377B193B7285DDE7325 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				CF4365B2D737A6C7CC786019 /* CodFis-Helper.bundle */,
-				9143549ED482126BBDD8B26D /* CodFis-Helper.bundle */,
-				E29A7285045F682504DA3945 /* CodFis_Helper.framework */,
-				2182BB28065C6702435D3706 /* CodFis_Helper.framework */,
-				7E7C77F8F046D5A5E0CA05BA /* Pods_CodFis_Helper_Example.framework */,
-				E17171040337CEAC6A77768C /* Pods_CodFis_Helper_Tests.framework */,
+				C20D60FA67535106324170CF /* Pods-CodFis-Helper_Example */,
+				00D848D38C824C8977BEBBA6 /* Pods-CodFis-Helper_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		7A79ED9FCCC2A519891AC99F /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				4341403393F42E8688A70ECE /* Info.plist */,
+				84AFCE6852F1F870F621D5D0 /* Pods-CodFis-Helper_Tests-FBSnapshotTestCase.modulemap */,
+				E2B222A324840986F4A11E42 /* Pods-CodFis-Helper_Tests-FBSnapshotTestCase.xcconfig */,
+				4734074D35BE2016E7F32A5D /* Pods-CodFis-Helper_Tests-FBSnapshotTestCase-Private.xcconfig */,
+				9CD52A4ABB9E24A12FDA11B4 /* Pods-CodFis-Helper_Tests-FBSnapshotTestCase-dummy.m */,
+				4BE73E65AC588F6A9D2D5461 /* Pods-CodFis-Helper_Tests-FBSnapshotTestCase-prefix.pch */,
+				D2DD1F06D9A0C8B1D20D9274 /* Pods-CodFis-Helper_Tests-FBSnapshotTestCase-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Pods-CodFis-Helper_Tests-FBSnapshotTestCase";
+			sourceTree = "<group>";
+		};
+		8A34ECD95BEA492D8FFC5586 = {
+			isa = PBXGroup;
+			children = (
+				44295926F50BE228F3664811 /* Podfile */,
+				00916F2B25E0A20A290924CF /* Development Pods */,
+				E15C433B07ECC03AA3CB48E2 /* Frameworks */,
+				2D6888ABBD12C6F6F6883504 /* Pods */,
+				8EB06008E4CA97731050F6A3 /* Products */,
+				5D250377B193B7285DDE7325 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		8EB06008E4CA97731050F6A3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FD664738B4AC98F5421FDECA /* CodFis-Helper.bundle */,
+				EC01D12AD9B85AF49E330F7B /* CodFis-Helper.bundle */,
+				DAADE4540CEBD84F453F0CB8 /* CodFis_Helper.framework */,
+				8788A7D8FE24D68EE1998CCC /* CodFis_Helper.framework */,
+				B649BBD084134EB15C749FB0 /* FBSnapshotTestCase.framework */,
+				EE3F94B3C8F6609981F7B3B6 /* Pods_CodFis_Helper_Example.framework */,
+				F5D8A5EE7634B0A698F7EB0E /* Pods_CodFis_Helper_Tests.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		F66CDDDCAFF5194B07BF682C = {
+		B877287A7F992BE98F807533 /* CodFis-Helper */ = {
 			isa = PBXGroup;
 			children = (
-				D83F6486D40A8F7ACC6FA555 /* Podfile */,
-				BD48D6AC8A4410BEB45F03C4 /* Development Pods */,
-				2E7E0FBC978EDFB1374BE981 /* Frameworks */,
-				EFA2CBEB30E7F7542BD9CE8C /* Products */,
-				2069765619EA52F851A2C3A9 /* Targets Support Files */,
+				F32C98AF806E0BB18648B3BF /* CodFis+Helper.h */,
+				23A643926CE2B8102E672350 /* CodFis+Helper.m */,
+				682E62EB1B4E79FE00CD5476 /* CodFisResponse.h */,
+				682E62EC1B4E79FE00CD5476 /* CodFisResponse.m */,
+				682E62ED1B4E79FE00CD5476 /* ResponseConstants.h */,
 			);
+			path = "CodFis-Helper";
+			sourceTree = "<group>";
+		};
+		B950EC4389B5116B3FA4CD51 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				C365C46168A519E94A5E6669 /* Foundation.framework */,
+				FD63618175B057F0186E4AE6 /* XCTest.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		BE306EE743CE0C6DE225C9CE /* FBSnapshotTestCase */ = {
+			isa = PBXGroup;
+			children = (
+				CBD4C6EE1FFA399F3D1E92D2 /* Core */,
+				7A79ED9FCCC2A519891AC99F /* Support Files */,
+				1FF3FBB6A7B6FF086C712CEF /* SwiftSupport */,
+			);
+			path = FBSnapshotTestCase;
+			sourceTree = "<group>";
+		};
+		C20D60FA67535106324170CF /* Pods-CodFis-Helper_Example */ = {
+			isa = PBXGroup;
+			children = (
+				512D0B961D51A3D0D22DAFD8 /* Info.plist */,
+				F7C52D2D5A4C63277D5E58F6 /* Pods-CodFis-Helper_Example.modulemap */,
+				FCD3387B5D75877C4A3C8E7D /* Pods-CodFis-Helper_Example-acknowledgements.markdown */,
+				F2D2D73B894DADA67EFD0474 /* Pods-CodFis-Helper_Example-acknowledgements.plist */,
+				AB2418C881E791EC426AF2F7 /* Pods-CodFis-Helper_Example-dummy.m */,
+				F61D570EC3ED6D3F44AA67C1 /* Pods-CodFis-Helper_Example-environment.h */,
+				505F5C1DE21C7441976EF295 /* Pods-CodFis-Helper_Example-frameworks.sh */,
+				08890B9E1C29D83B7B7A681E /* Pods-CodFis-Helper_Example-resources.sh */,
+				5132299E12A9D0AE2C2AFF36 /* Pods-CodFis-Helper_Example-umbrella.h */,
+				E3375BFF17B1FEB80BD8A778 /* Pods-CodFis-Helper_Example.debug.xcconfig */,
+				70B5C50D55B81F20E9F3F262 /* Pods-CodFis-Helper_Example.release.xcconfig */,
+			);
+			name = "Pods-CodFis-Helper_Example";
+			path = "Target Support Files/Pods-CodFis-Helper_Example";
+			sourceTree = "<group>";
+		};
+		C73CA15A5E473038C22DB1D9 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				0086C8E8CA0F31F4307CF34A /* Info.plist */,
+				887AFB6C1A73EF4FC4354128 /* Info.plist */,
+				70155AC6E63A878F87041E50 /* Pods-CodFis-Helper_Example-CodFis-Helper.modulemap */,
+				2BCAF1F451FF05D041D2B294 /* Pods-CodFis-Helper_Example-CodFis-Helper.xcconfig */,
+				07A5C1352836E777DA3ECC66 /* Pods-CodFis-Helper_Example-CodFis-Helper-Private.xcconfig */,
+				C626AA80C426E2598707A701 /* Pods-CodFis-Helper_Example-CodFis-Helper-dummy.m */,
+				A72BCEB24BC3FE3F8D88FD88 /* Pods-CodFis-Helper_Example-CodFis-Helper-prefix.pch */,
+				14064CFC1183DBE30A794162 /* Pods-CodFis-Helper_Example-CodFis-Helper-umbrella.h */,
+				5353614EDCA7223839D29985 /* Pods-CodFis-Helper_Tests-CodFis-Helper.modulemap */,
+				10EF7823C2D42E8DC85DAEEC /* Pods-CodFis-Helper_Tests-CodFis-Helper.xcconfig */,
+				54A161A13D2B129C3A12E4FB /* Pods-CodFis-Helper_Tests-CodFis-Helper-Private.xcconfig */,
+				F03A500FCEBC1C2A145D7251 /* Pods-CodFis-Helper_Tests-CodFis-Helper-dummy.m */,
+				7D4FB9CDACCA193E1EBCD14F /* Pods-CodFis-Helper_Tests-CodFis-Helper-prefix.pch */,
+				A25DFABD25743ED581C7F519 /* Pods-CodFis-Helper_Tests-CodFis-Helper-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/Pods-CodFis-Helper_Example-CodFis-Helper";
+			sourceTree = "<group>";
+		};
+		CBD4C6EE1FFA399F3D1E92D2 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				532F7FA1A3208D2C1928147D /* FBSnapshotTestCase.h */,
+				12DD0B70AA5243B80C0A4D11 /* FBSnapshotTestCase.m */,
+				370B3D23B94796BF139C0F91 /* FBSnapshotTestCasePlatform.h */,
+				5482DE07811DEC838989B93B /* FBSnapshotTestCasePlatform.m */,
+				AD62239DD5E49C3CF9D789AC /* FBSnapshotTestController.h */,
+				EBFF7693264042FC86C009B8 /* FBSnapshotTestController.m */,
+				C436F45B60999A37B19E10FA /* UIImage+Compare.h */,
+				01B8B5C4053FE34AFE563AD7 /* UIImage+Compare.m */,
+				9299C0EDFB29DFADAF1B3DB7 /* UIImage+Diff.h */,
+				F9A79DD569CEA854DECE857D /* UIImage+Diff.m */,
+			);
+			name = Core;
+			sourceTree = "<group>";
+		};
+		E15C433B07ECC03AA3CB48E2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B950EC4389B5116B3FA4CD51 /* iOS */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		42E845AE82D8E3DEC0A075B9 /* Headers */ = {
+		015589BFF4C2F9878776289A /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B6DCC253B33F661F9C1510FF /* CodFis+Helper.h in Headers */,
-				449F62CFA3A50C2403282704 /* Pods-CodFis-Helper_Tests-CodFis-Helper-umbrella.h in Headers */,
+				682E62F01B4E79FE00CD5476 /* ResponseConstants.h in Headers */,
+				F76DA07BC597DE093DA8391B /* Pods-CodFis-Helper_Example-umbrella.h in Headers */,
+				682E62EE1B4E79FE00CD5476 /* CodFisResponse.h in Headers */,
+				682E62F21B4E7C7800CD5476 /* CodFis+Helper.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		43FC10E171272A1C4021CF30 /* Headers */ = {
+		15C621F4B33C115A9B3B2502 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				45292986E7F060E35D823E9D /* Pods-CodFis-Helper_Example-umbrella.h in Headers */,
+				031C91CB8C177C02FFC571E4 /* CodFis+Helper.h in Headers */,
+				922637DC4ED13815F229AF5E /* Pods-CodFis-Helper_Example-CodFis-Helper-umbrella.h in Headers */,
+				682E62F31B4E7D0100CD5476 /* CodFisResponse.h in Headers */,
+				682E62F41B4E7D0500CD5476 /* ResponseConstants.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A2153E50EBDBCD1821330DD3 /* Headers */ = {
+		5FAB0A350382BE4E3FE0CF64 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3EB2B9105A4516E41F9957B6 /* Pods-CodFis-Helper_Tests-umbrella.h in Headers */,
+				35B03C2B9BF4B7BF5DB22F88 /* CodFis+Helper.h in Headers */,
+				BF0556483AF2D93604F9C3B2 /* Pods-CodFis-Helper_Tests-CodFis-Helper-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F910E2FFFEF2B27471CF1FAB /* Headers */ = {
+		9EACC8E4F1E60EBC171714FC /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A05724DFAAB6C9606BB9AE80 /* CodFis+Helper.h in Headers */,
-				851656C414D747F656B67F2D /* Pods-CodFis-Helper_Example-CodFis-Helper-umbrella.h in Headers */,
+				FAE650F6DE4BAB8D71F80DA6 /* FBSnapshotTestCase.h in Headers */,
+				8A99FDEF2CF0C6A18E9FCD81 /* FBSnapshotTestCasePlatform.h in Headers */,
+				740E910EA5092ADEAE386E1B /* FBSnapshotTestController.h in Headers */,
+				8C944B69107EE85CEF8258AF /* Pods-CodFis-Helper_Tests-FBSnapshotTestCase-umbrella.h in Headers */,
+				369C92CB96319A8558C3B43F /* UIImage+Compare.h in Headers */,
+				0E2E2E16478BBC7BE617B677 /* UIImage+Diff.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DE2377F341B92B4E4BF8A838 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D4B919AA85D6BF7616DAEEF3 /* Pods-CodFis-Helper_Tests-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		050961C76F8E2B642599D81B /* Pods-CodFis-Helper_Tests-CodFis-Helper */ = {
+		6FF4CD71E232ACAB02B32539 /* Pods-CodFis-Helper_Tests-FBSnapshotTestCase */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 3FED9357EA519B271B602CAB /* Build configuration list for PBXNativeTarget "Pods-CodFis-Helper_Tests-CodFis-Helper" */;
+			buildConfigurationList = BB218B6A0BE65C480A34FD63 /* Build configuration list for PBXNativeTarget "Pods-CodFis-Helper_Tests-FBSnapshotTestCase" */;
 			buildPhases = (
-				7346130CD927CFC1268F6357 /* Sources */,
-				A6A529DC2DCC94E88BE64F6D /* Frameworks */,
-				09E3D91FF0FBA17D90C95990 /* Resources */,
-				42E845AE82D8E3DEC0A075B9 /* Headers */,
+				7720E22CA4FB825DAB323407 /* Sources */,
+				BA4E27B64C2216C606127919 /* Frameworks */,
+				9EACC8E4F1E60EBC171714FC /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				2B8E3284E4A637129B0B78F8 /* PBXTargetDependency */,
+			);
+			name = "Pods-CodFis-Helper_Tests-FBSnapshotTestCase";
+			productName = "Pods-CodFis-Helper_Tests-FBSnapshotTestCase";
+			productReference = B649BBD084134EB15C749FB0 /* FBSnapshotTestCase.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		9E17CB4EA20D4DB70300B8AF /* Pods-CodFis-Helper_Tests-CodFis-Helper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AB9FCC8B8E9D351C04282BBC /* Build configuration list for PBXNativeTarget "Pods-CodFis-Helper_Tests-CodFis-Helper" */;
+			buildPhases = (
+				F604BF7629721C041EFA7205 /* Sources */,
+				E66356CA5B50684B079406D4 /* Frameworks */,
+				8554DA2B04B5CAB5F37CD363 /* Resources */,
+				5FAB0A350382BE4E3FE0CF64 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B6150B621C06D3D5E0F24757 /* PBXTargetDependency */,
 			);
 			name = "Pods-CodFis-Helper_Tests-CodFis-Helper";
 			productName = "Pods-CodFis-Helper_Tests-CodFis-Helper";
-			productReference = 2182BB28065C6702435D3706 /* CodFis_Helper.framework */;
+			productReference = 8788A7D8FE24D68EE1998CCC /* CodFis_Helper.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		0EE0E43644E9E2197249A877 /* Pods-CodFis-Helper_Tests */ = {
+		A985A3E0A157915C3311A610 /* Pods-CodFis-Helper_Tests-CodFis-Helper-CodFis-Helper */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CD786C65A3E8DC9D13182566 /* Build configuration list for PBXNativeTarget "Pods-CodFis-Helper_Tests" */;
+			buildConfigurationList = D6909F997BCDFC0D7D7EBF34 /* Build configuration list for PBXNativeTarget "Pods-CodFis-Helper_Tests-CodFis-Helper-CodFis-Helper" */;
 			buildPhases = (
-				9BFF383B767F01EECD47A2AB /* Sources */,
-				9FB91A280C2352B665514659 /* Frameworks */,
-				A2153E50EBDBCD1821330DD3 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				5D86238992A1C91CB87965BE /* PBXTargetDependency */,
-			);
-			name = "Pods-CodFis-Helper_Tests";
-			productName = "Pods-CodFis-Helper_Tests";
-			productReference = E17171040337CEAC6A77768C /* Pods_CodFis_Helper_Tests.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		1280F924D5223B5FEB6CF976 /* Pods-CodFis-Helper_Example-CodFis-Helper */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 4C1976E07654AE6396B94EDE /* Build configuration list for PBXNativeTarget "Pods-CodFis-Helper_Example-CodFis-Helper" */;
-			buildPhases = (
-				C2CF761A711C39BF4448F32D /* Sources */,
-				C817FC912BFE15A1E0333B95 /* Frameworks */,
-				8A8E8B7848D03B560D5A1158 /* Resources */,
-				F910E2FFFEF2B27471CF1FAB /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				D513C07E5A8940486CC431F3 /* PBXTargetDependency */,
-			);
-			name = "Pods-CodFis-Helper_Example-CodFis-Helper";
-			productName = "Pods-CodFis-Helper_Example-CodFis-Helper";
-			productReference = E29A7285045F682504DA3945 /* CodFis_Helper.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		25C88DDA6FC26EF63AFCBCCE /* Pods-CodFis-Helper_Example-CodFis-Helper-CodFis-Helper */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 5CA5C57CF641194EAB7E40C7 /* Build configuration list for PBXNativeTarget "Pods-CodFis-Helper_Example-CodFis-Helper-CodFis-Helper" */;
-			buildPhases = (
-				26D108B6F70E68DFAD7F97CC /* Sources */,
-				A06FC575882ACEFB663C545C /* Frameworks */,
-				00E68F17312C67E9E0E1B5AA /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "Pods-CodFis-Helper_Example-CodFis-Helper-CodFis-Helper";
-			productName = "Pods-CodFis-Helper_Example-CodFis-Helper-CodFis-Helper";
-			productReference = 9143549ED482126BBDD8B26D /* CodFis-Helper.bundle */;
-			productType = "com.apple.product-type.bundle";
-		};
-		E8B2CB4980C2740F02C576A5 /* Pods-CodFis-Helper_Tests-CodFis-Helper-CodFis-Helper */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 7DC7525AE362BCB8E502B2A9 /* Build configuration list for PBXNativeTarget "Pods-CodFis-Helper_Tests-CodFis-Helper-CodFis-Helper" */;
-			buildPhases = (
-				C7A8C932DE5F98F8C2535A94 /* Sources */,
-				1D103E179802ECCEA1057298 /* Frameworks */,
-				4A0F6506DA96C22A5D58AE0A /* Resources */,
+				AB685FA946FFED95504E3733 /* Sources */,
+				DDB5DF1E04C02888C3D173DE /* Frameworks */,
+				733E18E8D8997984BE81FC38 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -420,201 +527,251 @@
 			);
 			name = "Pods-CodFis-Helper_Tests-CodFis-Helper-CodFis-Helper";
 			productName = "Pods-CodFis-Helper_Tests-CodFis-Helper-CodFis-Helper";
-			productReference = CF4365B2D737A6C7CC786019 /* CodFis-Helper.bundle */;
+			productReference = FD664738B4AC98F5421FDECA /* CodFis-Helper.bundle */;
 			productType = "com.apple.product-type.bundle";
 		};
-		F1B9BAD77DB9391682A97332 /* Pods-CodFis-Helper_Example */ = {
+		AC114870DE52A975AC0DAF76 /* Pods-CodFis-Helper_Example */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 47A2B1A4AA9C21AE694191E7 /* Build configuration list for PBXNativeTarget "Pods-CodFis-Helper_Example" */;
+			buildConfigurationList = 10AED6C02F8E91E8AE67BED1 /* Build configuration list for PBXNativeTarget "Pods-CodFis-Helper_Example" */;
 			buildPhases = (
-				1FB8E766A40385D38A5360D5 /* Sources */,
-				43152B3E4EF24553B2142677 /* Frameworks */,
-				43FC10E171272A1C4021CF30 /* Headers */,
+				A917F4D277AC23598807D1A6 /* Sources */,
+				7B33CE02E340B5B57459C1FA /* Frameworks */,
+				015589BFF4C2F9878776289A /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				87D8CFA9F46DDFD507C8E894 /* PBXTargetDependency */,
+				4283C8114DFC0ED9DAEFB9D0 /* PBXTargetDependency */,
 			);
 			name = "Pods-CodFis-Helper_Example";
 			productName = "Pods-CodFis-Helper_Example";
-			productReference = 7E7C77F8F046D5A5E0CA05BA /* Pods_CodFis_Helper_Example.framework */;
+			productReference = EE3F94B3C8F6609981F7B3B6 /* Pods_CodFis_Helper_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		ADB261BDD4DF67A60AAD892E /* Pods-CodFis-Helper_Example-CodFis-Helper-CodFis-Helper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2B452DE3C85C9058480A32D3 /* Build configuration list for PBXNativeTarget "Pods-CodFis-Helper_Example-CodFis-Helper-CodFis-Helper" */;
+			buildPhases = (
+				9184340E4E8A4E254C659CB8 /* Sources */,
+				1CE5922711D49B3D8303D304 /* Frameworks */,
+				35F39712B51B81C0B89679F0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-CodFis-Helper_Example-CodFis-Helper-CodFis-Helper";
+			productName = "Pods-CodFis-Helper_Example-CodFis-Helper-CodFis-Helper";
+			productReference = EC01D12AD9B85AF49E330F7B /* CodFis-Helper.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+		E7DDCECEE4A682C150CA5D95 /* Pods-CodFis-Helper_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EC6D097E30D28B22A893FA5B /* Build configuration list for PBXNativeTarget "Pods-CodFis-Helper_Tests" */;
+			buildPhases = (
+				06AC5862A515288325DBAD3E /* Sources */,
+				A459BED9F830649B8392A2D3 /* Frameworks */,
+				DE2377F341B92B4E4BF8A838 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				93B1D4B6E5346AAF3A4B7CBD /* PBXTargetDependency */,
+				5CA5459FFD026A3C8726BC0B /* PBXTargetDependency */,
+			);
+			name = "Pods-CodFis-Helper_Tests";
+			productName = "Pods-CodFis-Helper_Tests";
+			productReference = F5D8A5EE7634B0A698F7EB0E /* Pods_CodFis_Helper_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		FD508D06D3936BDA8CAF7646 /* Pods-CodFis-Helper_Example-CodFis-Helper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 888C85DBE0B0E4676DFF7976 /* Build configuration list for PBXNativeTarget "Pods-CodFis-Helper_Example-CodFis-Helper" */;
+			buildPhases = (
+				315712B23431AFAFF8747204 /* Sources */,
+				44A13215044126705E5B4B13 /* Frameworks */,
+				1DEDB3E2A133B83FD813DEB3 /* Resources */,
+				15C621F4B33C115A9B3B2502 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				457CC6C6701CACD2BFD059F3 /* PBXTargetDependency */,
+			);
+			name = "Pods-CodFis-Helper_Example-CodFis-Helper";
+			productName = "Pods-CodFis-Helper_Example-CodFis-Helper";
+			productReference = DAADE4540CEBD84F453F0CB8 /* CodFis_Helper.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		6B1DCE258C608240329356C3 /* Project object */ = {
+		D4EA3A0DBDEDC1A3544B014D /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0640;
 			};
-			buildConfigurationList = 5903AE943666F7731DFA4748 /* Build configuration list for PBXProject "Pods" */;
+			buildConfigurationList = F6411F9C2DBF300C1D6A15D5 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = F66CDDDCAFF5194B07BF682C;
-			productRefGroup = EFA2CBEB30E7F7542BD9CE8C /* Products */;
+			mainGroup = 8A34ECD95BEA492D8FFC5586;
+			productRefGroup = 8EB06008E4CA97731050F6A3 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				F1B9BAD77DB9391682A97332 /* Pods-CodFis-Helper_Example */,
-				1280F924D5223B5FEB6CF976 /* Pods-CodFis-Helper_Example-CodFis-Helper */,
-				25C88DDA6FC26EF63AFCBCCE /* Pods-CodFis-Helper_Example-CodFis-Helper-CodFis-Helper */,
-				0EE0E43644E9E2197249A877 /* Pods-CodFis-Helper_Tests */,
-				050961C76F8E2B642599D81B /* Pods-CodFis-Helper_Tests-CodFis-Helper */,
-				E8B2CB4980C2740F02C576A5 /* Pods-CodFis-Helper_Tests-CodFis-Helper-CodFis-Helper */,
+				AC114870DE52A975AC0DAF76 /* Pods-CodFis-Helper_Example */,
+				FD508D06D3936BDA8CAF7646 /* Pods-CodFis-Helper_Example-CodFis-Helper */,
+				ADB261BDD4DF67A60AAD892E /* Pods-CodFis-Helper_Example-CodFis-Helper-CodFis-Helper */,
+				E7DDCECEE4A682C150CA5D95 /* Pods-CodFis-Helper_Tests */,
+				9E17CB4EA20D4DB70300B8AF /* Pods-CodFis-Helper_Tests-CodFis-Helper */,
+				A985A3E0A157915C3311A610 /* Pods-CodFis-Helper_Tests-CodFis-Helper-CodFis-Helper */,
+				6FF4CD71E232ACAB02B32539 /* Pods-CodFis-Helper_Tests-FBSnapshotTestCase */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		00E68F17312C67E9E0E1B5AA /* Resources */ = {
+		1DEDB3E2A133B83FD813DEB3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44893898ED38410328FA3CDE /* CodFis-Helper.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		35F39712B51B81C0B89679F0 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		09E3D91FF0FBA17D90C95990 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				2F080BAAA46563100E1B717C /* CodFis-Helper.bundle in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		4A0F6506DA96C22A5D58AE0A /* Resources */ = {
+		733E18E8D8997984BE81FC38 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8A8E8B7848D03B560D5A1158 /* Resources */ = {
+		8554DA2B04B5CAB5F37CD363 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E2700CDF38D4861AA43A610B /* CodFis-Helper.bundle in Resources */,
+				2B832CABAFF0DF8ACA788533 /* CodFis-Helper.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		1FB8E766A40385D38A5360D5 /* Sources */ = {
+		06AC5862A515288325DBAD3E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				11074E61989B7D6C4D6A48B9 /* Pods-CodFis-Helper_Example-dummy.m in Sources */,
+				5D657BB173296F03E7FB4443 /* Pods-CodFis-Helper_Tests-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		26D108B6F70E68DFAD7F97CC /* Sources */ = {
+		315712B23431AFAFF8747204 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6A67C66B8A8FFCC0827BD3A2 /* CodFis+Helper.m in Sources */,
+				682E62F51B4E7D0A00CD5476 /* CodFisResponse.m in Sources */,
+				0600BF2ED7BE9B1195B2DB41 /* Pods-CodFis-Helper_Example-CodFis-Helper-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7720E22CA4FB825DAB323407 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6CBE395BA6F457E7F5F9AEC4 /* FBSnapshotTestCase.m in Sources */,
+				739194CF3C6A82DACFE89C77 /* FBSnapshotTestCasePlatform.m in Sources */,
+				073BC680CC143C203E375B07 /* FBSnapshotTestController.m in Sources */,
+				FB6A7C48C5006786C97CC371 /* Pods-CodFis-Helper_Tests-FBSnapshotTestCase-dummy.m in Sources */,
+				FBD8879866F01693FF65E0D3 /* SwiftSupport.swift in Sources */,
+				5DC21A81D72033544B73CA55 /* UIImage+Compare.m in Sources */,
+				1D1DB8D567DA22599418521E /* UIImage+Diff.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9184340E4E8A4E254C659CB8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7346130CD927CFC1268F6357 /* Sources */ = {
+		A917F4D277AC23598807D1A6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				963F5BD90B6E320FC72481A5 /* CodFis+Helper.m in Sources */,
-				F691DE5B588CADE18173E16A /* Pods-CodFis-Helper_Tests-CodFis-Helper-dummy.m in Sources */,
+				C4E8894BB7D6FDD569A0A729 /* Pods-CodFis-Helper_Example-dummy.m in Sources */,
+				682E62EF1B4E79FE00CD5476 /* CodFisResponse.m in Sources */,
+				682E62F11B4E7C7200CD5476 /* CodFis+Helper.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9BFF383B767F01EECD47A2AB /* Sources */ = {
+		AB685FA946FFED95504E3733 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DEFC57FC0163DA4F71E489C2 /* Pods-CodFis-Helper_Tests-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C2CF761A711C39BF4448F32D /* Sources */ = {
+		F604BF7629721C041EFA7205 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				481F435F6E67E4F92ECE6BEE /* CodFis+Helper.m in Sources */,
-				7CE01568C283AADFFDE4BF99 /* Pods-CodFis-Helper_Example-CodFis-Helper-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C7A8C932DE5F98F8C2535A94 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				F1237B00BE9071CBF7D7629E /* CodFis+Helper.m in Sources */,
+				8A288069F5C2D41575250F06 /* Pods-CodFis-Helper_Tests-CodFis-Helper-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		2B8E3284E4A637129B0B78F8 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "Pods-CodFis-Helper_Tests-CodFis-Helper-CodFis-Helper";
-			target = E8B2CB4980C2740F02C576A5 /* Pods-CodFis-Helper_Tests-CodFis-Helper-CodFis-Helper */;
-			targetProxy = 256E65C7410233D852ABB86D /* PBXContainerItemProxy */;
-		};
-		5D86238992A1C91CB87965BE /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "Pods-CodFis-Helper_Tests-CodFis-Helper";
-			target = 050961C76F8E2B642599D81B /* Pods-CodFis-Helper_Tests-CodFis-Helper */;
-			targetProxy = 4F0E7AD1E0E8496E97999D69 /* PBXContainerItemProxy */;
-		};
-		87D8CFA9F46DDFD507C8E894 /* PBXTargetDependency */ = {
+		4283C8114DFC0ED9DAEFB9D0 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-CodFis-Helper_Example-CodFis-Helper";
-			target = 1280F924D5223B5FEB6CF976 /* Pods-CodFis-Helper_Example-CodFis-Helper */;
-			targetProxy = 0681F166833EF3C79651F4A2 /* PBXContainerItemProxy */;
+			target = FD508D06D3936BDA8CAF7646 /* Pods-CodFis-Helper_Example-CodFis-Helper */;
+			targetProxy = 0DE63DAAC610BAA0352E0217 /* PBXContainerItemProxy */;
 		};
-		D513C07E5A8940486CC431F3 /* PBXTargetDependency */ = {
+		457CC6C6701CACD2BFD059F3 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-CodFis-Helper_Example-CodFis-Helper-CodFis-Helper";
-			target = 25C88DDA6FC26EF63AFCBCCE /* Pods-CodFis-Helper_Example-CodFis-Helper-CodFis-Helper */;
-			targetProxy = 1F0136A32BF831CB14865356 /* PBXContainerItemProxy */;
+			target = ADB261BDD4DF67A60AAD892E /* Pods-CodFis-Helper_Example-CodFis-Helper-CodFis-Helper */;
+			targetProxy = 4C1637BB58BE42A541100530 /* PBXContainerItemProxy */;
+		};
+		5CA5459FFD026A3C8726BC0B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-CodFis-Helper_Tests-FBSnapshotTestCase";
+			target = 6FF4CD71E232ACAB02B32539 /* Pods-CodFis-Helper_Tests-FBSnapshotTestCase */;
+			targetProxy = 64A5F4DE937D5A82FB523A72 /* PBXContainerItemProxy */;
+		};
+		93B1D4B6E5346AAF3A4B7CBD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-CodFis-Helper_Tests-CodFis-Helper";
+			target = 9E17CB4EA20D4DB70300B8AF /* Pods-CodFis-Helper_Tests-CodFis-Helper */;
+			targetProxy = C056D5024005C284994D1973 /* PBXContainerItemProxy */;
+		};
+		B6150B621C06D3D5E0F24757 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-CodFis-Helper_Tests-CodFis-Helper-CodFis-Helper";
+			target = A985A3E0A157915C3311A610 /* Pods-CodFis-Helper_Tests-CodFis-Helper-CodFis-Helper */;
+			targetProxy = 20FAD1A64B56182A5CFE0092 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		14E9876FFED77C2190F75308 /* Release */ = {
+		0AB2FD82A4CEC07BCEB7720A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D7A4D7D3E1A0347D3C262438 /* Pods-CodFis-Helper_Tests.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-CodFis-Helper_Tests/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Pods-CodFis-Helper_Tests/Pods-CodFis-Helper_Tests.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = Pods_CodFis_Helper_Tests;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		2B38D914D8B92C430D61BC78 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = E31034BA95DA6EF7553F9912 /* Pods-CodFis-Helper_Tests-CodFis-Helper-Private.xcconfig */;
+			baseConfigurationReference = 54A161A13D2B129C3A12E4FB /* Pods-CodFis-Helper_Tests-CodFis-Helper-Private.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -626,10 +783,10 @@
 				GCC_PREFIX_HEADER = "Target Support Files/Pods-CodFis-Helper_Tests-CodFis-Helper/Pods-CodFis-Helper_Tests-CodFis-Helper-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/Pods-CodFis-Helper_Tests-CodFis-Helper/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/Pods-CodFis-Helper_Tests-CodFis-Helper/Pods-CodFis-Helper_Tests-CodFis-Helper.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_NAME = CodFis_Helper;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -637,13 +794,13 @@
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Debug;
+			name = Release;
 		};
-		2C9DD55CE5EBC2EB6A9134A2 /* Debug */ = {
+		1B564D69ED40CBFDFF6D3850 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E31034BA95DA6EF7553F9912 /* Pods-CodFis-Helper_Tests-CodFis-Helper-Private.xcconfig */;
+			baseConfigurationReference = 07A5C1352836E777DA3ECC66 /* Pods-CodFis-Helper_Example-CodFis-Helper-Private.xcconfig */;
 			buildSettings = {
-				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/Pods-CodFis-Helper_Tests";
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/Pods-CodFis-Helper_Example";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				PRODUCT_NAME = "CodFis-Helper";
 				SDKROOT = iphoneos;
@@ -652,9 +809,9 @@
 			};
 			name = Debug;
 		};
-		3697702B70392F8234F70D13 /* Release */ = {
+		1F6627BB5FCE4D066AF6F629 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C131402EAC8832B05EE58495 /* Pods-CodFis-Helper_Example.release.xcconfig */;
+			baseConfigurationReference = 70B5C50D55B81F20E9F3F262 /* Pods-CodFis-Helper_Example.release.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -665,7 +822,7 @@
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				INFOPLIST_FILE = "Target Support Files/Pods-CodFis-Helper_Example/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/Pods-CodFis-Helper_Example/Pods-CodFis-Helper_Example.modulemap";
 				MTL_ENABLE_DEBUG_INFO = NO;
@@ -681,7 +838,124 @@
 			};
 			name = Release;
 		};
-		3AED6DE4BB43B7AFCBAB62D7 /* Debug */ = {
+		23428127A095C5B26ACB5279 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2DF49C446DADE5E8C7EAEDCE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 54A161A13D2B129C3A12E4FB /* Pods-CodFis-Helper_Tests-CodFis-Helper-Private.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/Pods-CodFis-Helper_Tests";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				PRODUCT_NAME = "CodFis-Helper";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		2F4D17FF30D15CFDC34A3D78 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4734074D35BE2016E7F32A5D /* Pods-CodFis-Helper_Tests-FBSnapshotTestCase-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-CodFis-Helper_Tests-FBSnapshotTestCase/Pods-CodFis-Helper_Tests-FBSnapshotTestCase-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-CodFis-Helper_Tests-FBSnapshotTestCase/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-CodFis-Helper_Tests-FBSnapshotTestCase/Pods-CodFis-Helper_Tests-FBSnapshotTestCase.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = FBSnapshotTestCase;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		3C06F69F61F8027567FDCE48 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 07A5C1352836E777DA3ECC66 /* Pods-CodFis-Helper_Example-CodFis-Helper-Private.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/Pods-CodFis-Helper_Example";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				PRODUCT_NAME = "CodFis-Helper";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		8449C8185A2A9EF78AEF5756 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2F7B87844885414B46824173 /* Pods-CodFis-Helper_Tests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-CodFis-Helper_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-CodFis-Helper_Tests/Pods-CodFis-Helper_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_CodFis_Helper_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		87D8A12B4A8EBA1050E061C2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -713,16 +987,16 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				ONLY_ACTIVE_ARCH = YES;
 				STRIP_INSTALLED_PRODUCT = NO;
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Debug;
 		};
-		6E83BCA05D022C66A2B8A0CC /* Release */ = {
+		9890B68CF7EA03899F4C8D9C /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E31034BA95DA6EF7553F9912 /* Pods-CodFis-Helper_Tests-CodFis-Helper-Private.xcconfig */;
+			baseConfigurationReference = 54A161A13D2B129C3A12E4FB /* Pods-CodFis-Helper_Tests-CodFis-Helper-Private.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -734,40 +1008,11 @@
 				GCC_PREFIX_HEADER = "Target Support Files/Pods-CodFis-Helper_Tests-CodFis-Helper/Pods-CodFis-Helper_Tests-CodFis-Helper-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/Pods-CodFis-Helper_Tests-CodFis-Helper/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/Pods-CodFis-Helper_Tests-CodFis-Helper/Pods-CodFis-Helper_Tests-CodFis-Helper.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = CodFis_Helper;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		6EEBAE43FB6DA2B83BD612FD /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = ABDFEB9B10B60395DA5E2AD3 /* Pods-CodFis-Helper_Tests.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-CodFis-Helper_Tests/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Pods-CodFis-Helper_Tests/Pods-CodFis-Helper_Tests.modulemap";
 				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = Pods_CodFis_Helper_Tests;
+				PRODUCT_NAME = CodFis_Helper;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -776,9 +1021,22 @@
 			};
 			name = Debug;
 		};
-		80117FED1F70E6DDCE5B33F4 /* Debug */ = {
+		B703DB250531AA761A6D5D2C /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 417F12A1507D5B5D41F4DD5A /* Pods-CodFis-Helper_Example.debug.xcconfig */;
+			baseConfigurationReference = 54A161A13D2B129C3A12E4FB /* Pods-CodFis-Helper_Tests-CodFis-Helper-Private.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/Pods-CodFis-Helper_Tests";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				PRODUCT_NAME = "CodFis-Helper";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		BD6F9462A15C06671132B731 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E3375BFF17B1FEB80BD8A778 /* Pods-CodFis-Helper_Example.debug.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -789,7 +1047,7 @@
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				INFOPLIST_FILE = "Target Support Files/Pods-CodFis-Helper_Example/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/Pods-CodFis-Helper_Example/Pods-CodFis-Helper_Example.modulemap";
 				MTL_ENABLE_DEBUG_INFO = YES;
@@ -805,35 +1063,9 @@
 			};
 			name = Debug;
 		};
-		96BFEDAF4F62BAE052F0AEC8 /* Debug */ = {
+		CB8A1F56D7C1394AAF847308 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E8CE77C86DF3B2980F0A6F96 /* Pods-CodFis-Helper_Example-CodFis-Helper-Private.xcconfig */;
-			buildSettings = {
-				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/Pods-CodFis-Helper_Example";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				PRODUCT_NAME = "CodFis-Helper";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Debug;
-		};
-		AD2E15B662C4641E92D4B85C /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = E8CE77C86DF3B2980F0A6F96 /* Pods-CodFis-Helper_Example-CodFis-Helper-Private.xcconfig */;
-			buildSettings = {
-				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/Pods-CodFis-Helper_Example";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				PRODUCT_NAME = "CodFis-Helper";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Release;
-		};
-		B1169F79EF311937B07A7E65 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = E8CE77C86DF3B2980F0A6F96 /* Pods-CodFis-Helper_Example-CodFis-Helper-Private.xcconfig */;
+			baseConfigurationReference = 7E098244EEE0FC7D21152662 /* Pods-CodFis-Helper_Tests.release.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -842,72 +1074,55 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-CodFis-Helper_Example-CodFis-Helper/Pods-CodFis-Helper_Example-CodFis-Helper-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Pods-CodFis-Helper_Example-CodFis-Helper/Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-CodFis-Helper_Tests/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Pods-CodFis-Helper_Example-CodFis-Helper/Pods-CodFis-Helper_Example-CodFis-Helper.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = CodFis_Helper;
+				MODULEMAP_FILE = "Target Support Files/Pods-CodFis-Helper_Tests/Pods-CodFis-Helper_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_CodFis_Helper_Tests;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Debug;
+			name = Release;
 		};
-		B50DED60195486D83ECCFB9B /* Release */ = {
+		CEFDFAC234848AE10A0C3F1D /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E31034BA95DA6EF7553F9912 /* Pods-CodFis-Helper_Tests-CodFis-Helper-Private.xcconfig */;
+			baseConfigurationReference = 4734074D35BE2016E7F32A5D /* Pods-CodFis-Helper_Tests-FBSnapshotTestCase-Private.xcconfig */;
 			buildSettings = {
-				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/Pods-CodFis-Helper_Tests";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				PRODUCT_NAME = "CodFis-Helper";
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-CodFis-Helper_Tests-FBSnapshotTestCase/Pods-CodFis-Helper_Tests-FBSnapshotTestCase-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-CodFis-Helper_Tests-FBSnapshotTestCase/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-CodFis-Helper_Tests-FBSnapshotTestCase/Pods-CodFis-Helper_Tests-FBSnapshotTestCase.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = FBSnapshotTestCase;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				WRAPPER_EXTENSION = bundle;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
-			name = Release;
+			name = Debug;
 		};
-		D48A7B5317166F57A2E682C6 /* Release */ = {
+		D12FC66392131539CDC3D650 /* Release */ = {
 			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = YES;
-				ENABLE_NS_ASSERTIONS = NO;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
-				STRIP_INSTALLED_PRODUCT = NO;
-				SYMROOT = "${SRCROOT}/../build";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		F51756C2B23F8CDFDE644D69 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = E8CE77C86DF3B2980F0A6F96 /* Pods-CodFis-Helper_Example-CodFis-Helper-Private.xcconfig */;
+			baseConfigurationReference = 07A5C1352836E777DA3ECC66 /* Pods-CodFis-Helper_Example-CodFis-Helper-Private.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -919,7 +1134,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/Pods-CodFis-Helper_Example-CodFis-Helper/Pods-CodFis-Helper_Example-CodFis-Helper-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/Pods-CodFis-Helper_Example-CodFis-Helper/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/Pods-CodFis-Helper_Example-CodFis-Helper/Pods-CodFis-Helper_Example-CodFis-Helper.modulemap";
 				MTL_ENABLE_DEBUG_INFO = NO;
@@ -932,73 +1147,109 @@
 			};
 			name = Release;
 		};
+		DB31028628C7B6F9AE799D24 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 07A5C1352836E777DA3ECC66 /* Pods-CodFis-Helper_Example-CodFis-Helper-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-CodFis-Helper_Example-CodFis-Helper/Pods-CodFis-Helper_Example-CodFis-Helper-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-CodFis-Helper_Example-CodFis-Helper/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-CodFis-Helper_Example-CodFis-Helper/Pods-CodFis-Helper_Example-CodFis-Helper.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = CodFis_Helper;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		3FED9357EA519B271B602CAB /* Build configuration list for PBXNativeTarget "Pods-CodFis-Helper_Tests-CodFis-Helper" */ = {
+		10AED6C02F8E91E8AE67BED1 /* Build configuration list for PBXNativeTarget "Pods-CodFis-Helper_Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				2B38D914D8B92C430D61BC78 /* Debug */,
-				6E83BCA05D022C66A2B8A0CC /* Release */,
+				BD6F9462A15C06671132B731 /* Debug */,
+				1F6627BB5FCE4D066AF6F629 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		47A2B1A4AA9C21AE694191E7 /* Build configuration list for PBXNativeTarget "Pods-CodFis-Helper_Example" */ = {
+		2B452DE3C85C9058480A32D3 /* Build configuration list for PBXNativeTarget "Pods-CodFis-Helper_Example-CodFis-Helper-CodFis-Helper" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				80117FED1F70E6DDCE5B33F4 /* Debug */,
-				3697702B70392F8234F70D13 /* Release */,
+				1B564D69ED40CBFDFF6D3850 /* Debug */,
+				3C06F69F61F8027567FDCE48 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4C1976E07654AE6396B94EDE /* Build configuration list for PBXNativeTarget "Pods-CodFis-Helper_Example-CodFis-Helper" */ = {
+		888C85DBE0B0E4676DFF7976 /* Build configuration list for PBXNativeTarget "Pods-CodFis-Helper_Example-CodFis-Helper" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B1169F79EF311937B07A7E65 /* Debug */,
-				F51756C2B23F8CDFDE644D69 /* Release */,
+				DB31028628C7B6F9AE799D24 /* Debug */,
+				D12FC66392131539CDC3D650 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5903AE943666F7731DFA4748 /* Build configuration list for PBXProject "Pods" */ = {
+		AB9FCC8B8E9D351C04282BBC /* Build configuration list for PBXNativeTarget "Pods-CodFis-Helper_Tests-CodFis-Helper" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				3AED6DE4BB43B7AFCBAB62D7 /* Debug */,
-				D48A7B5317166F57A2E682C6 /* Release */,
+				9890B68CF7EA03899F4C8D9C /* Debug */,
+				0AB2FD82A4CEC07BCEB7720A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5CA5C57CF641194EAB7E40C7 /* Build configuration list for PBXNativeTarget "Pods-CodFis-Helper_Example-CodFis-Helper-CodFis-Helper" */ = {
+		BB218B6A0BE65C480A34FD63 /* Build configuration list for PBXNativeTarget "Pods-CodFis-Helper_Tests-FBSnapshotTestCase" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				96BFEDAF4F62BAE052F0AEC8 /* Debug */,
-				AD2E15B662C4641E92D4B85C /* Release */,
+				CEFDFAC234848AE10A0C3F1D /* Debug */,
+				2F4D17FF30D15CFDC34A3D78 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		7DC7525AE362BCB8E502B2A9 /* Build configuration list for PBXNativeTarget "Pods-CodFis-Helper_Tests-CodFis-Helper-CodFis-Helper" */ = {
+		D6909F997BCDFC0D7D7EBF34 /* Build configuration list for PBXNativeTarget "Pods-CodFis-Helper_Tests-CodFis-Helper-CodFis-Helper" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				2C9DD55CE5EBC2EB6A9134A2 /* Debug */,
-				B50DED60195486D83ECCFB9B /* Release */,
+				B703DB250531AA761A6D5D2C /* Debug */,
+				2DF49C446DADE5E8C7EAEDCE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		CD786C65A3E8DC9D13182566 /* Build configuration list for PBXNativeTarget "Pods-CodFis-Helper_Tests" */ = {
+		EC6D097E30D28B22A893FA5B /* Build configuration list for PBXNativeTarget "Pods-CodFis-Helper_Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				6EEBAE43FB6DA2B83BD612FD /* Debug */,
-				14E9876FFED77C2190F75308 /* Release */,
+				8449C8185A2A9EF78AEF5756 /* Debug */,
+				CB8A1F56D7C1394AAF847308 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F6411F9C2DBF300C1D6A15D5 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				87D8A12B4A8EBA1050E061C2 /* Debug */,
+				23428127A095C5B26ACB5279 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 6B1DCE258C608240329356C3 /* Project object */;
+	rootObject = D4EA3A0DBDEDC1A3544B014D /* Project object */;
 }

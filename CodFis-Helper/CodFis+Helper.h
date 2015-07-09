@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "CodFisResponse.h"
 
 @interface CodFis_Helper : NSObject
 
@@ -30,9 +31,17 @@ typedef enum {
 @property (nonatomic, strong)   NSString *place;
 @property (nonatomic) BOOL collision;
 
-- (NSString*) calculate;
+
++ (CodFisResponse*) calculateFromSurname:(NSString*) surname name:(NSString*) name birthDay:(NSInteger) birthDay birthMonth:(NSInteger) birthMonth birthYear:(NSInteger) birthYear gender:(Gender) gender state:(State) state place:(NSString*) place collision:(BOOL) collision;
+
++ (BOOL) checkCodFisFromSurname:(NSString*) surname name:(NSString*) name birthDay:(NSInteger) birthDay birthMonth:(NSInteger) birthMonth birthYear:(NSInteger) birthYear gender:(Gender) gender state:(State) state place:(NSString*) place collision:(BOOL) collision andCodFis:(NSString*) codFis;
+
+- (instancetype) initFromSurname:(NSString*) surname name:(NSString*) name birthDay:(NSInteger) birthDay birthMonth:(NSInteger) birthMonth birthYear:(NSInteger) birthYear gender:(Gender) gender state:(State) state place:(NSString*) place collision:(BOOL) collision;
+
+- (CodFisResponse*) calculate;
 
 - (BOOL) check:(NSString*) codFis;
+
 
 
 

@@ -1,5 +1,5 @@
 //
-//  CodFis+Helper.m
+//  CodFis+self.m
 //  Pods
 //
 //  Created by Giuseppe Nucifora on 08/07/15.
@@ -11,46 +11,134 @@
 #define DEF_SURNAME_COD_LENGHT 3
 #define DEF_NAME_COD_LENGHT 3
 
+@interface CodFis_Helper() {
+    
+    NSNumberFormatter* numberFormatter;
+}
+
+@property (nonatomic, strong) NSString *codFis;
+
+@end
+
 @implementation CodFis_Helper
 
-- (instancetype) init {
++ (CodFisResponse*) calculateFromSurname:(NSString*) surname name:(NSString*) name birthDay:(NSInteger) birthDay birthMonth:(NSInteger) birthMonth birthYear:(NSInteger) birthYear gender:(Gender) gender state:(State) state place:(NSString*) place collision:(BOOL) collision {
+    
+    return [[[self alloc] initFromSurname:surname name:name birthDay:birthDay birthMonth:birthMonth birthYear:birthYear gender:gender state:state place:place collision:collision] calculate];
+}
+
++ (BOOL) checkCodFisFromSurname:(NSString*) surname name:(NSString*) name birthDay:(NSInteger) birthDay birthMonth:(NSInteger) birthMonth birthYear:(NSInteger) birthYear gender:(Gender) gender state:(State) state place:(NSString*) place collision:(BOOL) collision andCodFis:(NSString*) codFis {
+    
+    return [[[self alloc] initFromSurname:surname name:name birthDay:birthDay birthMonth:birthMonth birthYear:birthYear gender:gender state:state place:place collision:collision] check:codFis];
+}
+
+- (instancetype) initFromSurname:(NSString*) surname name:(NSString*) name birthDay:(NSInteger) birthDay birthMonth:(NSInteger) birthMonth birthYear:(NSInteger) birthYear gender:(Gender) gender state:(State) state place:(NSString*) place collision:(BOOL) collision {
+    
     self = [super init];
+    
     if (self) {
         
+        [self setSurname:surname];
+        
+        [self setName:name];
+        
+        [self setBirthDay:birthDay];
+        
+        [self setBirthMonth:birthMonth];
+        
+        [self setBirthYear:birthYear];
+        
+        [self setGender:gender];
+        
+        [self setState:state];
+        
+        [self setPlace:place];
     }
     return self;
 }
 
-- (NSString*) calculate {
+
+
+- (CodFisResponse*) calculate {
+    
+    NSError *error;
     
     NSMutableString *resposeString = [[NSMutableString alloc] init];
     
-    [resposeString appendString:[self getCodFisSurname]];
+    NSString *tempResponse = [self getCodFisSurname];
     
-    [resposeString appendString:[self getCodFisName]];
+    if (!tempResponse) {
+        error = [NSError errorWithDomain:NSLocalizedString(@"Bad Request in Surname", @"") code:ResponseStatusBadRequest userInfo:[NSDictionary dictionaryWithObjectsAndKeys:[NSDictionary dictionaryWithObjectsAndKeys:[NSNumber numberWithInteger:ResponseStatusBadRequest],@"Code",NSLocalizedString(@"Bad Request in Surname", @""),@"Message", nil],@"Meta", nil]];
+    }
+    else {
+        [resposeString appendString:tempResponse];
+    }
     
-    [resposeString appendString:[self getCodFisYear]];
+    tempResponse = [self getCodFisName];
     
-    [resposeString appendString:[self getCodFisMonth]];
+    if (!tempResponse) {
+        error = [NSError errorWithDomain:NSLocalizedString(@"Bad Request in Name", @"") code:ResponseStatusBadRequest userInfo:[NSDictionary dictionaryWithObjectsAndKeys:[NSDictionary dictionaryWithObjectsAndKeys:[NSNumber numberWithInteger:ResponseStatusBadRequest],@"Code",NSLocalizedString(@"Bad Request in Name", @""),@"Message", nil],@"Meta", nil]];
+    }
+    else {
+        [resposeString appendString:tempResponse];
+    }
     
-    [resposeString appendString:[self getCodFisDay]];
+    tempResponse = [self getCodFisYear];
     
-    [resposeString appendString:[self getCodFisPlace]];
+    if (!tempResponse) {
+        error = [NSError errorWithDomain:NSLocalizedString(@"Bad Request in Year", @"") code:ResponseStatusBadRequest userInfo:[NSDictionary dictionaryWithObjectsAndKeys:[NSDictionary dictionaryWithObjectsAndKeys:[NSNumber numberWithInteger:ResponseStatusBadRequest],@"Code",NSLocalizedString(@"Bad Request in Year", @""),@"Message", nil],@"Meta", nil]];
+    }
+    else {
+        [resposeString appendString:tempResponse];
+    }
+
+    tempResponse = [self getCodFisMonth];
     
-    return [resposeString stringByReplacingOccurrencesOfString:@" " withString:@""];
+    if (!tempResponse) {
+        error = [NSError errorWithDomain:NSLocalizedString(@"Bad Request in Month", @"") code:ResponseStatusBadRequest userInfo:[NSDictionary dictionaryWithObjectsAndKeys:[NSDictionary dictionaryWithObjectsAndKeys:[NSNumber numberWithInteger:ResponseStatusBadRequest],@"Code",NSLocalizedString(@"Bad Request in Month", @""),@"Message", nil],@"Meta", nil]];
+    }
+    else {
+        [resposeString appendString:tempResponse];
+    }
+    
+    tempResponse = [self getCodFisDay];
+    
+    if (!tempResponse) {
+        error = [NSError errorWithDomain:NSLocalizedString(@"Bad Request in Day", @"") code:ResponseStatusBadRequest userInfo:[NSDictionary dictionaryWithObjectsAndKeys:[NSDictionary dictionaryWithObjectsAndKeys:[NSNumber numberWithInteger:ResponseStatusBadRequest],@"Code",NSLocalizedString(@"Bad Request in Day", @""),@"Message", nil],@"Meta", nil]];
+    }
+    else {
+        [resposeString appendString:tempResponse];
+    }
+    
+    tempResponse = [self getCodFisPlace];
+    
+    if (!tempResponse) {
+        error = [NSError errorWithDomain:NSLocalizedString(@"Bad Request in Place", @"") code:ResponseStatusBadRequest userInfo:[NSDictionary dictionaryWithObjectsAndKeys:[NSDictionary dictionaryWithObjectsAndKeys:[NSNumber numberWithInteger:ResponseStatusBadRequest],@"Code",NSLocalizedString(@"Bad Request in Place", @""),@"Message", nil],@"Meta", nil]];
+    }
+    else {
+        [resposeString appendString:tempResponse];
+    }
+    
+    
+    
+    _codFis = [resposeString stringByReplacingOccurrencesOfString:@" " withString:@""];;
+    
+    [resposeString appendString:[self getCodFisControlCode]];
+    
+    return [[CodFisResponse alloc] initWithResponse:resposeString andError:error];
 }
 
 - (BOOL) check:(NSString*) codFis {
-    return YES;
+    
+    return [[[self calculate] response] isEqualToString:[codFis uppercaseString]];
 }
 
 - (NSString *) getCodFisSurname {
     NSMutableString *resultString = [[NSMutableString alloc] init];
-    NSString *vowels = @"aeiouàèìòùáéíóúäëïöü";
-    NSString *chars = @"qwrtypsdfghjklzxcvbnm";
     
-    NSArray* consonantsArray  = [[_surname lowercaseString] componentsSeparatedByCharactersInSet:[NSCharacterSet characterSetWithCharactersInString:vowels]];
-    NSArray* vowelArray = [[_surname lowercaseString] componentsSeparatedByCharactersInSet:[NSCharacterSet characterSetWithCharactersInString:chars]];
+    NSMutableArray *consonantsArray = [NSMutableArray arrayWithArray:[self getConsonantArray:_surname]];
+    
+    NSMutableArray *vowelArray = [NSMutableArray arrayWithArray:[self getVowelsArray:_surname]];
     
     for (NSString *chr in consonantsArray) {
         if (![chr isEqualToString:@""]) {
@@ -58,7 +146,7 @@
         }
     }
     
-    if ([resultString length] >= DEF_SURNAME_COD_LENGHT) {
+    if ([resultString length] > DEF_SURNAME_COD_LENGHT) {
         return [[resultString substringToIndex:DEF_SURNAME_COD_LENGHT] uppercaseString];
     }
     
@@ -68,7 +156,7 @@
         }
     }
     
-    if ([resultString length] >= DEF_SURNAME_COD_LENGHT) {
+    if ([resultString length] > DEF_SURNAME_COD_LENGHT) {
         [resultString setString:[resultString substringToIndex:DEF_SURNAME_COD_LENGHT]];
     }
     else {
@@ -80,12 +168,12 @@
 }
 
 - (NSString *) getCodFisName {
-    NSMutableString *resultString = [[NSMutableString alloc] init];
-    NSString *vowels = @"aeiouàèìòùáéíóúäëïöü";
-    NSString *chars = @"qwrtypsdfghjklzxcvbnm";
     
-    NSMutableArray* consonantsArray  = [NSMutableArray arrayWithArray:[[_name lowercaseString] componentsSeparatedByCharactersInSet:[NSCharacterSet characterSetWithCharactersInString:vowels]]];
-    NSArray* vowelArray = [NSMutableArray arrayWithArray:[[_name lowercaseString] componentsSeparatedByCharactersInSet:[NSCharacterSet characterSetWithCharactersInString:chars]]];
+    NSMutableString *resultString = [[NSMutableString alloc] init];
+    
+    NSMutableArray *consonantsArray = [NSMutableArray arrayWithArray:[self getConsonantArray:_name]];
+    
+    NSMutableArray *vowelArray = [NSMutableArray arrayWithArray:[self getVowelsArray:_name]];
     
     for (NSString *chr in [consonantsArray mutableCopy]) {
         if ([chr isEqualToString:@""]) {
@@ -105,7 +193,7 @@
             }
         }
         
-        if ([resultString length] >= DEF_SURNAME_COD_LENGHT) {
+        if ([resultString length] > DEF_SURNAME_COD_LENGHT) {
             return [[resultString substringToIndex:DEF_SURNAME_COD_LENGHT] uppercaseString];
         }
         
@@ -115,7 +203,7 @@
             }
         }
         
-        if ([resultString length] >= DEF_SURNAME_COD_LENGHT) {
+        if ([resultString length] > DEF_SURNAME_COD_LENGHT) {
             [resultString setString:[resultString substringToIndex:DEF_SURNAME_COD_LENGHT]];
         }
         else {
@@ -130,10 +218,10 @@
 - (NSString *) getCodFisYear {
     
     if (_birthYear < 100) {
-        return [NSString stringWithFormat:@"%ld",_birthYear];
+        return [NSString stringWithFormat:@"%ld",(long)_birthYear];
     }
     else {
-        NSString * allDigits = [NSString stringWithFormat:@"%ld",_birthYear];
+        NSString * allDigits = [NSString stringWithFormat:@"%ld",(long)_birthYear];
         return [allDigits substringWithRange:NSMakeRange(allDigits.length -2, 2)];
     }
     return nil;
@@ -188,22 +276,110 @@
             break;
     }
     if (checkMonth) {
-        return [NSString stringWithFormat:@"%02ld",_birthDay + increment];
+        return [NSString stringWithFormat:@"%02ld",(long)_birthDay + increment];
     }
     
     return nil;
 }
 
+- (NSArray*) getConsonantArray:(NSString*) string {
+    
+    NSRegularExpression *regex = [NSRegularExpression regularExpressionWithPattern:@"([A,Á,Ã,E,É,Ê,I,Í,O,Ô,Ó,Õ,U,Û,Ü,Ú]?)" options:NSRegularExpressionCaseInsensitive error:nil];
+    
+    string = [[string uppercaseString] stringByReplacingOccurrencesOfString:@" " withString:@""];
+    
+    NSString *resultString = [regex stringByReplacingMatchesInString:string options:0 range:NSMakeRange(0, [string length]) withTemplate:@""];
+    
+    NSMutableArray *responseArray = [[NSMutableArray alloc] init];
+    
+    for (int i = 0; i < [resultString length]; i++) {
+        [responseArray addObject:[resultString substringWithRange:NSMakeRange(i, 1)]];
+    }
+    
+    return responseArray;
+}
+
+- (NSArray*) getVowelsArray:(NSString *) string {
+    
+    NSRegularExpression *regex = [NSRegularExpression regularExpressionWithPattern:@"([Q,W,R,T,Y,P,S,D,F,G,H,J,K,L,Z,X,C,V,B,N,M]?)" options:NSRegularExpressionCaseInsensitive error:nil];
+    
+    string = [[string uppercaseString] stringByReplacingOccurrencesOfString:@" " withString:@""];
+    
+    NSString *resultString = [regex stringByReplacingMatchesInString:string options:0 range:NSMakeRange(0, [string length]) withTemplate:@""];
+    
+    NSMutableArray *responseArray = [[NSMutableArray alloc] init];
+    
+    for (int i = 0; i < [resultString length]; i++) {
+        [responseArray addObject:[resultString substringWithRange:NSMakeRange(i, 1)]];
+    }
+    
+    return responseArray;
+}
+
 - (NSString *) getCodFisPlace {
+    
+    NSString *responseString;
     
     NSError *error = nil;
     
-    NSDictionary *dict = [NSKeyedUnarchiver unarchiveObjectWithData:[[NSData alloc] initWithContentsOfFile:[self getCodFisPlaceListFile] options:NSDataReadingMappedAlways error:&error]];
-
-    NSLog(@"%@",dict);
+    NSData *data = [[NSData alloc] initWithContentsOfFile:[self getCodFisPlaceListFile] options:NSDataReadingMappedAlways error:&error];
     
+    NSDictionary *json = [NSJSONSerialization JSONObjectWithData:data options:0 error:nil];
+    
+    @try {
+        responseString = [json objectForKey:[_place uppercaseString]];
+    }
+    @catch (NSException *exception) {
+        
+    }
+    @finally {
+        if (responseString) {
+            return responseString;
+        }
+    }
     return nil;
 }
+
+- (NSString *) getCodFisControlCode {
+    
+    NSArray *contributeCode = @[@"1",@"0",@"5",@"7",@"9",@"13",@"15",@"17",@"19",@"21",@"2",@"4",@"18",@"20",@"11",@"3",@"6",@"8",@"12",@"14",@"16",@"10",@"22",@"25",@"24",@"23"];
+    
+    NSArray *reponseCode = @[@"A",@"B",@"C",@"D",@"E",@"F",@"G",@"H",@"I",@"J",@"K",@"L",@"M",@"N",@"O",@"P",@"Q",@"R",@"S",@"T",@"U",@"V",@"W",@"X",@"Y",@"Z"];
+    
+    NSInteger tempIndex = 0;
+    
+    NSInteger index = 1;
+    for (NSString *chr in [self getcodFisArray]) {
+        
+        if ([self isNumeric:chr]) {
+            
+            if (index%2 == 0) {
+                tempIndex += [chr integerValue];            }
+            else {
+                tempIndex += [[contributeCode objectAtIndex:[chr integerValue]] integerValue];
+            }
+        }
+        else {
+            if (index%2 == 0) {
+                tempIndex += [self getAlphabetContributeCode:chr];
+            }
+            else {
+                tempIndex += [[contributeCode objectAtIndex:[self getAlphabetContributeCode:chr]] integerValue];
+            }
+        }
+        
+        index++;
+    }
+    return [reponseCode objectAtIndex:ceil((int)tempIndex%26)];
+}
+
+- (NSInteger) getAlphabetContributeCode:(NSString *) chr {
+    
+    unichar c = [chr characterAtIndex:0];
+    
+    return (NSInteger)(((short)c)-65);
+}
+
 
 - (NSString*) getCodFisPlaceListFile {
     
@@ -212,4 +388,28 @@
     return filePath;
 }
 
+- (NSArray *) getcodFisArray
+{
+    NSMutableArray *arr = [[NSMutableArray alloc]init];
+    for (int i=0; i < _codFis.length; i++) {
+        NSString *tmp_str = [_codFis substringWithRange:NSMakeRange(i, 1)];
+        [arr addObject:[tmp_str stringByReplacingPercentEscapesUsingEncoding:NSUTF8StringEncoding]];
+    }
+    return arr;
+}
+
+-(BOOL) isNumeric:(NSString*) hexText
+{
+    if (!numberFormatter) {
+        numberFormatter = [[NSNumberFormatter alloc] init];
+    }
+    
+    NSNumber* number = [numberFormatter numberFromString:hexText];
+    
+    if (number != nil) {
+        return true;
+    }
+    
+    return false;
+}
 @end

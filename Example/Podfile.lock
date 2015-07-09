@@ -1,8 +1,14 @@
 PODS:
   - CodFis-Helper (0.1.0)
+  - FBSnapshotTestCase (2.0.2):
+    - FBSnapshotTestCase/SwiftSupport (= 2.0.2)
+  - FBSnapshotTestCase/Core (2.0.2)
+  - FBSnapshotTestCase/SwiftSupport (2.0.2):
+    - FBSnapshotTestCase/Core
 
 DEPENDENCIES:
   - CodFis-Helper (from `../`)
+  - FBSnapshotTestCase
 
 EXTERNAL SOURCES:
   CodFis-Helper:
@@ -10,5 +16,6 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   CodFis-Helper: 16b94c06d9483db0c57582a4b699691e33c8cb0f
+  FBSnapshotTestCase: fd500d5b282c4ec60215d26d0b58b0cf271dd0d6
 
 COCOAPODS: 0.37.2

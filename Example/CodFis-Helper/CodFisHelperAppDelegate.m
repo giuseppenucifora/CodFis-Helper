@@ -7,6 +7,7 @@
 //
 
 #import "CodFisHelperAppDelegate.h"
+#import "CodFis+Helper.h"
 
 @implementation CodFisHelperAppDelegate
 
@@ -16,21 +17,26 @@
     
     CodFis_Helper *helper = [[CodFis_Helper alloc] init];
     
-    [helper setSurname:@"Nucifora"];
+    [helper setSurname:@"Rose"];
     
-    [helper setName:@"Giuseppe Emanuel"];
+    [helper setName:@"Jean Christophe Domi"];
     
-    [helper setBirthDay:9];
+    [helper setBirthDay:12];
     
-    [helper setBirthMonth:8];
+    [helper setBirthMonth:3];
     
-    [helper setBirthYear:85];
+    [helper setBirthYear:87];
     
     [helper setGender:Gender_Man];
     
-    [helper setState:Italy];
+    [helper setState:OtherCountries];
     
-    NSLog(@"%@",[helper calculate]);
+    [helper setPlace:@"Maurizio"];
+    
+    NSLog(@"%@",[[helper calculate] responseError]);
+    NSLog(@"%@",[[helper calculate] response]);
+    
+    NSLog(@"%@",[NSNumber numberWithBool:[helper check:@"TESTCFASDASDASD"]]);
     
     return YES;
 }
