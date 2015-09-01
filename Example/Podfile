@@ -1,6 +1,8 @@
 source 'https://github.com/CocoaPods/Specs.git'
 use_frameworks!
 
+pod 'NSString-Helper' , :git => 'https://github.com/giuseppenucifora/NSString-Helper.git'
+
 target 'CodFis-Helper_Example', :exclusive => true do
   pod "CodFis-Helper", :path => "../"
 end
@@ -9,4 +11,5 @@ target 'CodFis-Helper_Tests', :exclusive => true do
   pod "CodFis-Helper", :path => "../"
 
   pod 'FBSnapshotTestCase'
+  
 end

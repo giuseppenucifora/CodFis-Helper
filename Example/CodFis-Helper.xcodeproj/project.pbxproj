@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		02420A3BAD7D56CBD9608A80 /* Pods_CodFis_Helper_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED75084BBB7A339D5827B501 /* Pods_CodFis_Helper_Tests.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		455880D41F2CECB3619AF253 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BB4A80C77573D5B9442B004 /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
 		6003F592195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
@@ -22,8 +23,9 @@
 		6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5B8195388D20070C39A /* InfoPlist.strings */; };
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
 		682E62E61B4DD3BA00CD5476 /* codFisCodes.json in Resources */ = {isa = PBXBuildFile; fileRef = 682ECFD31B4DCE9C005659B6 /* codFisCodes.json */; };
-		682E62E91B4E78E500CD5476 /* CodFisResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 682E62E81B4E78E500CD5476 /* CodFisResponse.m */; };
-		682ECFD41B4DCE9C005659B6 /* CodFis+Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = 682ECFD21B4DCE9C005659B6 /* CodFis+Helper.m */; };
+		68CB324F1B53BC5300A2C5E9 /* CodFis+Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = 68CB324C1B53BC5300A2C5E9 /* CodFis+Helper.m */; };
+		68CB32501B53BC5300A2C5E9 /* CodFisResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 68CB324D1B53BC5300A2C5E9 /* CodFisResponse.m */; };
+		68CB32511B53BC5300A2C5E9 /* VatNumber+Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = 68CB324E1B53BC5300A2C5E9 /* VatNumber+Helper.m */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
 		91AC20C3FDDAB28D136716A5 /* Pods_CodFis_Helper_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 522AA81E364FC60CEA095D19 /* Pods_CodFis_Helper_Example.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
@@ -39,6 +41,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0BB4A80C77573D5B9442B004 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0FF540E8B32373B53024B477 /* Pods-CodFis-Helper_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CodFis-Helper_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CodFis-Helper_Example/Pods-CodFis-Helper_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		1594F5810C36498D7A9E1614 /* Pods-CodFis-Helper_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CodFis-Helper_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-CodFis-Helper_Example/Pods-CodFis-Helper_Example.release.xcconfig"; sourceTree = "<group>"; };
 		3EAAC1157191A3E29BFE13F9 /* Pods-CodFis-Helper_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CodFis-Helper_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CodFis-Helper_Tests/Pods-CodFis-Helper_Tests.release.xcconfig"; sourceTree = "<group>"; };
@@ -70,6 +73,9 @@
 		682ECFD31B4DCE9C005659B6 /* codFisCodes.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = codFisCodes.json; sourceTree = "<group>"; };
 		6840FB021B4D78B5009724FE /* CodFisResources.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CodFisResources.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		6840FB051B4D78B5009724FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		68CB324C1B53BC5300A2C5E9 /* CodFis+Helper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "CodFis+Helper.m"; sourceTree = "<group>"; };
+		68CB324D1B53BC5300A2C5E9 /* CodFisResponse.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CodFisResponse.m; sourceTree = "<group>"; };
+		68CB324E1B53BC5300A2C5E9 /* VatNumber+Helper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "VatNumber+Helper.m"; sourceTree = "<group>"; };
 		69D594011BE85121E72B1E7C /* CodFis-Helper.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = "CodFis-Helper.podspec"; path = "../CodFis-Helper.podspec"; sourceTree = "<group>"; };
 		72426C36BAE7F3E98B267A8F /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
@@ -87,6 +93,7 @@
 				6003F592195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F58E195388D20070C39A /* Foundation.framework in Frameworks */,
 				91AC20C3FDDAB28D136716A5 /* Pods_CodFis_Helper_Example.framework in Frameworks */,
+				455880D41F2CECB3619AF253 /* Pods.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -143,6 +150,7 @@
 				6003F5AF195388D20070C39A /* XCTest.framework */,
 				522AA81E364FC60CEA095D19 /* Pods_CodFis_Helper_Example.framework */,
 				ED75084BBB7A339D5827B501 /* Pods_CodFis_Helper_Tests.framework */,
+				0BB4A80C77573D5B9442B004 /* Pods.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -206,6 +214,9 @@
 		682ECFD01B4DCE9C005659B6 /* CodFis-Helper */ = {
 			isa = PBXGroup;
 			children = (
+				68CB324C1B53BC5300A2C5E9 /* CodFis+Helper.m */,
+				68CB324D1B53BC5300A2C5E9 /* CodFisResponse.m */,
+				68CB324E1B53BC5300A2C5E9 /* VatNumber+Helper.m */,
 				682ECFD11B4DCE9C005659B6 /* CodFis+Helper.h */,
 				682ECFD21B4DCE9C005659B6 /* CodFis+Helper.m */,
 				682E62E71B4E78E500CD5476 /* CodFisResponse.h */,
@@ -445,7 +456,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CodFis-Helper_Example/Pods-CodFis-Helper_Example-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		BFB571F90ED180AAC20C7457 /* Embed Pods Frameworks */ = {
@@ -470,11 +481,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				682E62E91B4E78E500CD5476 /* CodFisResponse.m in Sources */,
 				6003F59E195388D20070C39A /* CodFisHelperAppDelegate.m in Sources */,
-				682ECFD41B4DCE9C005659B6 /* CodFis+Helper.m in Sources */,
 				6003F5A7195388D20070C39A /* CodFisHelperViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
+				68CB324F1B53BC5300A2C5E9 /* CodFis+Helper.m in Sources */,
+				68CB32501B53BC5300A2C5E9 /* CodFisResponse.m in Sources */,
+				68CB32511B53BC5300A2C5E9 /* VatNumber+Helper.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -6,9 +6,9 @@
 // project.
 
 
-// CodFis-Helper
-#define COCOAPODS_POD_AVAILABLE_CodFis_Helper
-#define COCOAPODS_VERSION_MAJOR_CodFis_Helper 0
-#define COCOAPODS_VERSION_MINOR_CodFis_Helper 1
-#define COCOAPODS_VERSION_PATCH_CodFis_Helper 1
+// NSString-Helper
+#define COCOAPODS_POD_AVAILABLE_NSString_Helper
+#define COCOAPODS_VERSION_MAJOR_NSString_Helper 0
+#define COCOAPODS_VERSION_MINOR_NSString_Helper 1
+#define COCOAPODS_VERSION_PATCH_NSString_Helper 1
 

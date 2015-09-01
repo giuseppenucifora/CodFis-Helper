@@ -8,6 +8,7 @@
 
 #import "CodFisHelperAppDelegate.h"
 #import "CodFis+Helper.h"
+#import "VatNumber+Helper.h"
 
 @implementation CodFisHelperAppDelegate
 
@@ -35,10 +36,12 @@
     
     CodFisResponse *response = [helper calculate];
     
-    NSLog(@"%@",[response responseError]);
+    NSLog(@"%@",[response responseErrors]);
     NSLog(@"%@",[response response]);
     
     NSLog(@"%@",[NSNumber numberWithBool:[helper check:@"TESTCFASDASDASD"]]);
+    
+    NSLog(@"%@",[VatNumber_Helper evaluate:@"050 27300879"]);
     
     return YES;
 }

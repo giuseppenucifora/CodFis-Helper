@@ -11,9 +11,9 @@
 
 @interface CodFisResponse : NSObject
 
-@property (nonatomic, strong, readonly) NSError *responseError;
+@property (nonatomic, strong, readonly) NSArray *responseErrors;
 @property (nonatomic, strong, readonly) NSString *response;
 
-- (instancetype) initWithResponse:(NSString*) response andError:(NSError*) responseError;
+- (instancetype) initWithResponse:(NSString*) response andErrors:(NSArray*) responseErrors;
 
 @end

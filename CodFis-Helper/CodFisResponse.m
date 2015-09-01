@@ -10,10 +10,10 @@
 
 @implementation CodFisResponse
 
-- (instancetype) initWithResponse:(NSString*) response andError:(NSError*) responseError {
+- (instancetype) initWithResponse:(NSString*) response andErrors:(NSArray*) responseErrors {
     self = [super init];
     if (self) {
-        _responseError = responseError;
+        _responseErrors = [NSArray arrayWithArray:responseErrors];
         _response = response;
     }
     return self;

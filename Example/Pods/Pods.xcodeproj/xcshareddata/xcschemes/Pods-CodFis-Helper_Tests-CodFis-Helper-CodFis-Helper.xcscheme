@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "A985A3E0A157915C3311A610"
+               BlueprintIdentifier = "A3EB34A7716F88DAD410DA6C"
                BuildableName = "CodFis-Helper.bundle"
                BlueprintName = "Pods-CodFis-Helper_Tests-CodFis-Helper-CodFis-Helper"
                ReferencedContainer = "container:Pods.xcodeproj">

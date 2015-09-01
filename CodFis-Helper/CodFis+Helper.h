@@ -42,9 +42,4 @@ typedef enum {
 
 - (BOOL) check:(NSString*) codFis;
 
-
-
-
-
-
 @end

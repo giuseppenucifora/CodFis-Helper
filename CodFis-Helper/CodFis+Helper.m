@@ -61,14 +61,14 @@
 
 - (CodFisResponse*) calculate {
     
-    NSError *error;
+    NSMutableArray *errors = [[NSMutableArray alloc] init];
     
     NSMutableString *resposeString = [[NSMutableString alloc] init];
     
     NSString *tempResponse = [self getCodFisSurname];
     
     if (!tempResponse) {
-        error = [NSError errorWithDomain:NSLocalizedString(@"Bad Request in Surname", @"") code:ResponseStatusBadRequest userInfo:[NSDictionary dictionaryWithObjectsAndKeys:[NSDictionary dictionaryWithObjectsAndKeys:[NSNumber numberWithInteger:ResponseStatusBadRequest],@"Code",NSLocalizedString(@"Bad Request in Surname", @""),@"Message", nil],@"Meta", nil]];
+        [errors addObject:[NSError errorWithDomain:NSLocalizedString(@"Bad Request in Surname", @"") code:ResponseStatusBadRequest userInfo:[NSDictionary dictionaryWithObjectsAndKeys:[NSDictionary dictionaryWithObjectsAndKeys:[NSNumber numberWithInteger:ResponseStatusBadRequest],@"Code",NSLocalizedString(@"Bad Request in Surname", @""),@"Message", nil],@"Meta", nil]]];
     }
     else {
         [resposeString appendString:tempResponse];
@@ -77,7 +77,7 @@
     tempResponse = [self getCodFisName];
     
     if (!tempResponse) {
-        error = [NSError errorWithDomain:NSLocalizedString(@"Bad Request in Name", @"") code:ResponseStatusBadRequest userInfo:[NSDictionary dictionaryWithObjectsAndKeys:[NSDictionary dictionaryWithObjectsAndKeys:[NSNumber numberWithInteger:ResponseStatusBadRequest],@"Code",NSLocalizedString(@"Bad Request in Name", @""),@"Message", nil],@"Meta", nil]];
+        [errors addObject:[NSError errorWithDomain:NSLocalizedString(@"Bad Request in Surname", @"") code:ResponseStatusBadRequest userInfo:[NSDictionary dictionaryWithObjectsAndKeys:[NSDictionary dictionaryWithObjectsAndKeys:[NSNumber numberWithInteger:ResponseStatusBadRequest],@"Code",NSLocalizedString(@"Bad Request in Surname", @""),@"Message", nil],@"Meta", nil]]];
     }
     else {
         [resposeString appendString:tempResponse];
@@ -86,7 +86,7 @@
     tempResponse = [self getCodFisYear];
     
     if (!tempResponse) {
-        error = [NSError errorWithDomain:NSLocalizedString(@"Bad Request in Year", @"") code:ResponseStatusBadRequest userInfo:[NSDictionary dictionaryWithObjectsAndKeys:[NSDictionary dictionaryWithObjectsAndKeys:[NSNumber numberWithInteger:ResponseStatusBadRequest],@"Code",NSLocalizedString(@"Bad Request in Year", @""),@"Message", nil],@"Meta", nil]];
+        [errors addObject:[NSError errorWithDomain:NSLocalizedString(@"Bad Request in Surname", @"") code:ResponseStatusBadRequest userInfo:[NSDictionary dictionaryWithObjectsAndKeys:[NSDictionary dictionaryWithObjectsAndKeys:[NSNumber numberWithInteger:ResponseStatusBadRequest],@"Code",NSLocalizedString(@"Bad Request in Surname", @""),@"Message", nil],@"Meta", nil]]];
     }
     else {
         [resposeString appendString:tempResponse];
@@ -95,7 +95,7 @@
     tempResponse = [self getCodFisMonth];
     
     if (!tempResponse) {
-        error = [NSError errorWithDomain:NSLocalizedString(@"Bad Request in Month", @"") code:ResponseStatusBadRequest userInfo:[NSDictionary dictionaryWithObjectsAndKeys:[NSDictionary dictionaryWithObjectsAndKeys:[NSNumber numberWithInteger:ResponseStatusBadRequest],@"Code",NSLocalizedString(@"Bad Request in Month", @""),@"Message", nil],@"Meta", nil]];
+        [errors addObject:[NSError errorWithDomain:NSLocalizedString(@"Bad Request in Surname", @"") code:ResponseStatusBadRequest userInfo:[NSDictionary dictionaryWithObjectsAndKeys:[NSDictionary dictionaryWithObjectsAndKeys:[NSNumber numberWithInteger:ResponseStatusBadRequest],@"Code",NSLocalizedString(@"Bad Request in Surname", @""),@"Message", nil],@"Meta", nil]]];
     }
     else {
         [resposeString appendString:tempResponse];
@@ -104,7 +104,7 @@
     tempResponse = [self getCodFisDay];
     
     if (!tempResponse) {
-        error = [NSError errorWithDomain:NSLocalizedString(@"Bad Request in Day", @"") code:ResponseStatusBadRequest userInfo:[NSDictionary dictionaryWithObjectsAndKeys:[NSDictionary dictionaryWithObjectsAndKeys:[NSNumber numberWithInteger:ResponseStatusBadRequest],@"Code",NSLocalizedString(@"Bad Request in Day", @""),@"Message", nil],@"Meta", nil]];
+        [errors addObject:[NSError errorWithDomain:NSLocalizedString(@"Bad Request in Surname", @"") code:ResponseStatusBadRequest userInfo:[NSDictionary dictionaryWithObjectsAndKeys:[NSDictionary dictionaryWithObjectsAndKeys:[NSNumber numberWithInteger:ResponseStatusBadRequest],@"Code",NSLocalizedString(@"Bad Request in Surname", @""),@"Message", nil],@"Meta", nil]]];
     }
     else {
         [resposeString appendString:tempResponse];
@@ -113,19 +113,24 @@
     tempResponse = [self getCodFisPlace];
     
     if (!tempResponse) {
-        error = [NSError errorWithDomain:NSLocalizedString(@"Bad Request in Place", @"") code:ResponseStatusBadRequest userInfo:[NSDictionary dictionaryWithObjectsAndKeys:[NSDictionary dictionaryWithObjectsAndKeys:[NSNumber numberWithInteger:ResponseStatusBadRequest],@"Code",NSLocalizedString(@"Bad Request in Place", @""),@"Message", nil],@"Meta", nil]];
+        [errors addObject:[NSError errorWithDomain:NSLocalizedString(@"Bad Request in Surname", @"") code:ResponseStatusBadRequest userInfo:[NSDictionary dictionaryWithObjectsAndKeys:[NSDictionary dictionaryWithObjectsAndKeys:[NSNumber numberWithInteger:ResponseStatusBadRequest],@"Code",NSLocalizedString(@"Bad Request in Surname", @""),@"Message", nil],@"Meta", nil]]];
     }
     else {
         [resposeString appendString:tempResponse];
     }
     
-    
-    
     _codFis = [resposeString stringByReplacingOccurrencesOfString:@" " withString:@""];;
     
     [resposeString appendString:[self getCodFisControlCode]];
     
-    return [[CodFisResponse alloc] initWithResponse:resposeString andError:error];
+    NSString *checkString = [self ControllaCF:[resposeString UTF8String]];
+    
+    if ([checkString isEqualToString:@""]) {
+    }
+    else {
+        [errors addObject:[NSError errorWithDomain:checkString code:ResponseStatusBadRequest userInfo:[NSDictionary dictionaryWithObjectsAndKeys:[NSDictionary dictionaryWithObjectsAndKeys:[NSNumber numberWithInteger:ResponseStatusBadRequest],@"Code",checkString,@"Message", nil],@"Meta", nil]]];
+    }
+    return [[CodFisResponse alloc] initWithResponse:resposeString andErrors:errors];
 }
 
 - (BOOL) check:(NSString*) codFis {
@@ -134,6 +139,7 @@
 }
 
 - (NSString *) getCodFisSurname {
+    
     NSMutableString *resultString = [[NSMutableString alloc] init];
     
     NSMutableArray *consonantsArray = [NSMutableArray arrayWithArray:[self getConsonantArray:_surname]];
@@ -412,4 +418,41 @@
     
     return false;
 }
+
+
+- (NSString *) ControllaCF:(const char *) cf {
+    
+    int s, i, c;
+    int setdisp[] = { 1, 0, 5, 7, 9, 13, 15, 17, 19, 21, 2, 4, 18, 20,
+        11, 3, 6, 8, 12, 14, 16, 10, 22, 25, 24, 23 };
+    if( cf[0] == 0 )  return @"";
+    if( strlen(cf) != 16 )
+        return NSLocalizedString(@"La lunghezza del codice fiscale non &egrave;\n"
+                                 "corretta: il codice fiscale dovrebbe essere lungo\n"
+                                 "esattamente 16 caratteri.", @"");
+        for( i=0; i<16; i++ ){
+        c = toupper( cf[i] );
+        if( ! isdigit(c) && !( 'A'<=c && c<='Z' ) )
+            return NSLocalizedString(@"Il codice fiscale contiene dei caratteri non validi:\n"
+            "i soli caratteri validi sono le lettere e le cifre.",@"");
+    }
+    s = 0;
+    for( i=1; i<=13; i+=2 ){
+        c = toupper( cf[i] );
+        if( isdigit(c) )
+            s += c - '0';
+        else
+            s += c - 'A';
+    }
+    for( i=0; i<=14; i+=2 ){
+        c = toupper( cf[i] );
+        if( isdigit(c) )  c = c - '0' + 'A';
+        s += setdisp[c - 'A'];
+    }
+    if( s%26 + 'A' != toupper( cf[15] ) )
+        return NSLocalizedString(@"Il codice fiscale non &egrave; corretto:\n"
+        "il codice di controllo non corrisponde.",@"");
+    return @"";
+}
+
 @end
