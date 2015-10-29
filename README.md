@@ -18,6 +18,10 @@ it, simply add the following line to your Podfile:
 
 ```ruby
 pod 'CodFis-Helper' , :git => 'https://github.com/giuseppenucifora/CodFis-Helper.git'
+
+OR
+
+pod 'CodFis-Helper'
 ```
 
 ##Usage
