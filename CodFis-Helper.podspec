@@ -21,7 +21,4 @@ Pod::Spec.new do |s|
   s.requires_arc = true
 
   s.source_files = 'CodFis-Helper/*.{h,m}'
-  s.resource_bundles = {
-    'CodFis-Helper' => ['Pod/Assets/*.png']
-  }
 end

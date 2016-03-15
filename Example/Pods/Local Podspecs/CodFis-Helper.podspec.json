@@ -1,6 +1,6 @@
 {
   "name": "CodFis-Helper",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "summary": "CodFis-Helper help you to validate Tax Code",
   "homepage": "https://github.com/giuseppenucifora/CodFis-Helper",
   "license": "MIT",
@@ -9,16 +9,11 @@
   },
   "source": {
     "git": "https://github.com/giuseppenucifora/CodFis-Helper.git",
-    "tag": "0.1.2"
+    "tag": "0.1.3"
   },
   "platforms": {
     "ios": "7.0"
   },
   "requires_arc": true,
-  "source_files": "CodFis-Helper/*.{h,m}",
-  "resource_bundles": {
-    "CodFis-Helper": [
-      "Pod/Assets/*.png"
-    ]
-  }
+  "source_files": "CodFis-Helper/*.{h,m}"
 }

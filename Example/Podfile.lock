@@ -1,5 +1,5 @@
 PODS:
-  - CodFis-Helper (0.1.2)
+  - CodFis-Helper (0.1.3)
   - FBSnapshotTestCase (2.0.7):
     - FBSnapshotTestCase/SwiftSupport (= 2.0.7)
   - FBSnapshotTestCase/Core (2.0.7)
@@ -15,7 +15,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  CodFis-Helper: f303810699f22dbcba8fb8c600545ac91fc3ec42
+  CodFis-Helper: 28be4c74d7202542459d72354f59b1215871de87
   FBSnapshotTestCase: 7e85180d0d141a0cf472352edda7e80d7eaeb547
 
 PODFILE CHECKSUM: 46115fa8956df1348d7a67adf2eadceee1024a14
