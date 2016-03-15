@@ -9,7 +9,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "CodFis-Helper"
-  s.version          = "0.1.2"
+  s.version          = "0.1.3"
   s.summary          = "CodFis-Helper help you to validate Tax Code"
   s.homepage         = "https://github.com/giuseppenucifora/CodFis-Helper"
   s.license          = 'MIT'

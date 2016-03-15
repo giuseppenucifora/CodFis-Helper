@@ -1,31 +1,23 @@
 PODS:
-  - CodFis-Helper (0.1.1)
-  - FBSnapshotTestCase (2.0.2):
-    - FBSnapshotTestCase/SwiftSupport (= 2.0.2)
-  - FBSnapshotTestCase/Core (2.0.2)
-  - FBSnapshotTestCase/SwiftSupport (2.0.2):
+  - CodFis-Helper (0.1.2)
+  - FBSnapshotTestCase (2.0.7):
+    - FBSnapshotTestCase/SwiftSupport (= 2.0.7)
+  - FBSnapshotTestCase/Core (2.0.7)
+  - FBSnapshotTestCase/SwiftSupport (2.0.7):
     - FBSnapshotTestCase/Core
-  - NSString-Helper (0.1.1)
 
 DEPENDENCIES:
   - CodFis-Helper (from `../`)
   - FBSnapshotTestCase
-  - NSString-Helper (from `https://github.com/giuseppenucifora/NSString-Helper.git`)
 
 EXTERNAL SOURCES:
   CodFis-Helper:
-    :path: ../
-  NSString-Helper:
-    :git: https://github.com/giuseppenucifora/NSString-Helper.git
-
-CHECKOUT OPTIONS:
-  NSString-Helper:
-    :commit: 3f41f57c5dc65232a6f3c36721380b19108c209b
-    :git: https://github.com/giuseppenucifora/NSString-Helper.git
+    :path: "../"
 
 SPEC CHECKSUMS:
-  CodFis-Helper: e6bc80bdf0b60c1ba7217ef10369e8a60a14ef83
-  FBSnapshotTestCase: fd500d5b282c4ec60215d26d0b58b0cf271dd0d6
-  NSString-Helper: a36ba8cc45d559492a59bd73311065aacda3be75
+  CodFis-Helper: f303810699f22dbcba8fb8c600545ac91fc3ec42
+  FBSnapshotTestCase: 7e85180d0d141a0cf472352edda7e80d7eaeb547
 
-COCOAPODS: 0.37.2
+PODFILE CHECKSUM: 46115fa8956df1348d7a67adf2eadceee1024a14
+
+COCOAPODS: 1.0.0.beta.6
